@@ -171,6 +171,7 @@ class PlgFabrik_FormEmail extends PlgFabrik_Form
 			$message = $this->_getTextEmail();
 		}
 
+		$this->attachments = array(); //Reset in case of multiple email plugins
 		$this->addAttachments();
 
 		$cc  = null;
