@@ -2,20 +2,30 @@ Fabrik for J!4.x
 ================
 
 This is a test version, not a complete working version of fabrik.
+
 Work is in progress to get it al working.
 
 Final version:
 ================
 
 Working in J!4.x only, does not work on <J!4.
+
 Package removed (did not work and was not supported anyway).
+
 All version hacks (release) removed, to be reimplemented for >J!4 and <J!5; we start with the latest J!4 version.
+
 All unused functions removed (yes, there are some).
+
 Cleaner install: only install what we need. Do a real install of library files, not install and copy (this is called 'moving files').
+
 Visualization removed, because most does not work well and there are much better alternatives.
+
 No sample application and several links removed from home dashboard.
+
 Backend adapted for Atum template, frontend adapted for Cassiopeia template.
+
 Limited amount of plugins.
+
 Default language is Enlish only, other language can be installed seperately.
 
 Test version:
