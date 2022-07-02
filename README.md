@@ -16,7 +16,8 @@ All version hacks (release) removed, to be reimplemented for >J!4 and <J!5; we s
 
 All unused functions removed (yes, there are some).
 
-Cleaner install: only install what we need. Do a real install of library files, not install and copy (this is called 'moving files').
+Install: only install what we need. Do a real install of library files, not install and copy (this is called 'moving files').
+For the upgrade from J!3 to J!4: Add an option to install / uninstall fabrik files only; leaving all fabrik tables as they are in the database.
 
 Visualization removed, because most does not work well and there are much better alternatives.
 
