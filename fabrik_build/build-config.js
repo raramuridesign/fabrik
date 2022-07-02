@@ -8,9 +8,14 @@ module.exports = {
         'visualization'
     ],
     'corePackageFiles': [
+        'plg_fabrik_system_{version}.zip',
+        'plg_fabrik_element_jdate_{version}.zip',
+        'plg_fabrik_element_internalid_{version}.zip',
+        'plg_fabrik_element_field_{version}.zip',
+        'com_fabrik_{version}.zip',
         'mod_fabrik_form_{version}.zip',
         'mod_fabrik_list_{version}.zip',
-        'plg_fabrik_system_{version}.zip',
+/*
         'plg_fabrik_schedule_{version}.zip',
         'plg_fabrik_content_{version}.zip',
         'plg_fabrik_cron_email_{version}.zip',
@@ -19,14 +24,11 @@ module.exports = {
         'plg_fabrik_element_checkbox_{version}.zip',
         'plg_fabrik_element_databasejoin_{version}.zip',
         'plg_fabrik_element_date_{version}.zip',
-        'plg_fabrik_element_jdate_{version}.zip',
         'plg_fabrik_element_display_{version}.zip',
         'plg_fabrik_element_dropdown_{version}.zip',
-        'plg_fabrik_element_field_{version}.zip',
         'plg_fabrik_element_fileupload_{version}.zip',
         'plg_fabrik_element_googlemap_{version}.zip',
         'plg_fabrik_element_image_{version}.zip',
-        'plg_fabrik_element_internalid_{version}.zip',
         'plg_fabrik_element_link_{version}.zip',
         'plg_fabrik_element_radiobutton_{version}.zip',
         'plg_fabrik_element_textarea_{version}.zip',
@@ -44,11 +46,11 @@ module.exports = {
         'plg_fabrik_validationrule_isemail_{version}.zip',
         'plg_fabrik_visualization_chart_{version}.zip',
         'plg_fabrik_visualization_fullcalendar_{version}.zip',
-	    'plg_fabrik_visualization_calendar_{version}.zip',
+        'plg_fabrik_visualization_calendar_{version}.zip',
         'plg_fabrik_visualization_googlemap_{version}.zip',
         'plg_fabrik_visualization_media_{version}.zip',
         'plg_fabrik_visualization_slideshow_{version}.zip',
-        'com_fabrik_{version}.zip'
+*/        
     ],
     'modules'         : [
         {
