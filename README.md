@@ -50,16 +50,8 @@ I just keep it in for debugging purpose.
 Build and Install:
 ================
 
-The build tool may be working here.
+The build tool should be working now.
 Only plugins plg_fabrik_element_field, plg_fabrik_element_internalid, plg_fabrik_element_jdate and plg_fabrik_system should be installed
-I did not test this, so no garantee.
-
-I use the easy way:
-create a zip-file of each source (com_fabrik, plg_fabrik_element_field, plg_fabrik_element_internalid, plg_fabrik_element_jdate, plg_fabrik_system)
-store these in the 'package' folder
-create a zip-file of the 'package' folder together with pkg_fabrik.xml
-rename the created zip-file to 'fabrik.zip'
-install fabrik.zip in a clean joomla 4.x (latest version)
 
 The build tool needs to be modified later, when all is working in J!4
 
@@ -68,10 +60,14 @@ For now I copied my installable fabrik.zip in the fabrik_build folder
 Progress:
 ================
 
-2022-07-01: 
+2022-07-04: 
 Install is working, only temporary manually install mootools-core.js & mootools-more.js in media\system\js. 
 I will change this later, so they are loaded by the WebAssetManager
 
-A new list can be created. 
-All other menu items (forms, groups, elements,...) need some updates and may not yet work as expected. 
+A new list can be created and a new (field)element can be added. A list can be trashed and trash can be emptied.
+A new list menu item can be created, but the frontend is not working yet (router error).
+
+All other menu items (forms, groups, elements,...) are updated, but some may not yet work as expected.
+
+Only the status filter is working, other filters are not working yet.
 
