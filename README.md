@@ -8,7 +8,7 @@ Work is in progress to get it al working.
 Final version:
 ================
 
-Working in J!4.x only, does not work on <J!4.
+Working in J!4.1.x & PHP 8.0, does not work on <J!4.
 
 Package removed (did not work and was not supported anyway).
 
@@ -53,6 +53,8 @@ Build and Install:
 The build tool should be working now.
 Only plugins plg_fabrik_element_field, plg_fabrik_element_internalid, plg_fabrik_element_jdate and plg_fabrik_system should be installed
 
+Temporary manually install mootools-core.js & mootools-more.js (from fabrik 3.10) in media\system\js.
+
 The build tool needs to be modified later, when all is working in J!4
 
 For now I copied my installable fabrik.zip in the fabrik_build folder
@@ -65,9 +67,9 @@ Install is working, only temporary manually install mootools-core.js & mootools-
 I will change this later, so they are loaded by the WebAssetManager
 
 A new list can be created and a new (field)element can be added. A list can be trashed and trash can be emptied.
-A new list menu item can be created, but the frontend is not working yet (router error).
+A new list menu item can be created, but the frontend is not working yet.
 
-All other menu items (forms, groups, elements,...) are updated, but some may not yet work as expected.
+All menu items (lists, forms, groups, elements,...) are updated to the Atum template, but some may not yet work as expected.
 
 Only the status filter is working, other filters are not working yet.
 
