@@ -22,6 +22,7 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Client;
 use Fabrik\Helpers\Worker;
+use Joomla\CMS\Date\Date;
 
 // Require the abstract plugin class
 require_once COM_FABRIK_FRONTEND . '/models/plugin-form.php';
@@ -114,7 +115,7 @@ class PlgFabrik_FormZoom extends PlgFabrik_Form
 
                 if (FabrikWorker::isDate($value))
                 {
-                    $date = new \DateTime($value);
+                    $date = new Date($value);
                     $value = $date->format("Y-m-d\TH:i:s");
                 }
                 break;
