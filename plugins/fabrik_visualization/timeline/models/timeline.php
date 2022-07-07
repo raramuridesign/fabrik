@@ -164,7 +164,7 @@ class FabrikModelTimeline extends FabrikFEModelVisualization
 	{
 		$input = $this->app->input;
 		$params = $this->getParams();
-		$timeZone = new DateTimeZone($this->config->get('offset'));
+		$timeZone = new \DateTimeZone($this->config->get('offset'));
 		$w = new FabrikWorker;
 		jimport('string.normalise');
 		$templates = (array) $params->get('timeline_detailtemplate', array());
@@ -363,7 +363,7 @@ class FabrikModelTimeline extends FabrikFEModelVisualization
 		$textColours = (array) $params->get('timeline_text_color', array());
 		$classNames = (array) $params->get('timeline_class', array());
 
-		$timeZone = new DateTimeZone(Factory::getConfig()->get('offset'));
+		$timeZone = new \DateTimeZone(Factory::getConfig()->get('offset'));
 
 		$lists = $params->get('timeline_table', array());
 		$eventdata = array();
