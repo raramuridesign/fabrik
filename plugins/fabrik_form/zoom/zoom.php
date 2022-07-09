@@ -1354,7 +1354,7 @@ class PlgFabrik_FormZoom extends PlgFabrik_Form
         $db = Worker::getDbo();
         $query = $db->getQuery(true);
         $query->select('db_table_name')
-            ->from('#__{package}_lists')
+            ->from('#__fabrik_lists')
             ->where('id = ' . (int)$attendingTable);
         $db->setQuery($query);
         $db_table_name = $db->loadResult();
