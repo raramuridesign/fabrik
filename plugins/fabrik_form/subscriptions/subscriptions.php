@@ -11,6 +11,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\MVC\Model\BaseDatabaseModel;
 use Joomla\CMS\Table\Table;
 use Joomla\CMS\Filter\InputFilter;
@@ -560,7 +561,7 @@ class PlgFabrik_FormSubscriptions extends PlgFabrik_Form
 		}
 		else
 		{
-			echo FText::_("thanks");
+			echo Text::_("thanks");
 		}
 	}
 

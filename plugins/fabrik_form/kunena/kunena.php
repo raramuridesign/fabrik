@@ -11,6 +11,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\Filesystem\File;
 
 // Require the abstract plugin class
@@ -177,7 +178,7 @@ class PlgFabrik_FormKunena extends PlgFabrik_Form
 
 			if (!$message->save())
 			{
-				$app->enqueueMessage(FText::_('PLG_FORM_KUNENA_ERR_DIDNT_SAVE_MESSAGE') . ': ' . $message->getError(), 'error');
+				$app->enqueueMessage(Text::_('PLG_FORM_KUNENA_ERR_DIDNT_SAVE_MESSAGE') . ': ' . $message->getError(), 'error');
 			}
 
 			if ($params->get('kunena_notify', '0') === '1')
@@ -187,7 +188,7 @@ class PlgFabrik_FormKunena extends PlgFabrik_Form
 		}
 		else
 		{
-			$app->enqueueMessage(FText::_('PLG_FORM_KUNENA_ERR_DIDNT_SAVE_TOPIC') . ': ' . $topic->getError(), 'error');
+			$app->enqueueMessage(Text::_('PLG_FORM_KUNENA_ERR_DIDNT_SAVE_TOPIC') . ': ' . $topic->getError(), 'error');
 		}
 
 		$input->set('id', $origId);

@@ -64,7 +64,7 @@ class PlgFabrik_FormSalesforce extends PlgFabrik_Form
 	{
 		if (!class_exists('SoapClient'))
 		{
-			throw new Exception(FText::_('PLG_FORM_SALESFORCE_ERR_SOAP_NOT_INSTALLED'));
+			throw new Exception(Text::_('PLG_FORM_SALESFORCE_ERR_SOAP_NOT_INSTALLED'));
 		}
 	}
 
@@ -179,12 +179,12 @@ class PlgFabrik_FormSalesforce extends PlgFabrik_Form
 				{
 					foreach ($result->errors as $error)
 					{
-						JError::raiseWarning(500, FText::_('SALESFORCE_ERR') . $error->message);
+						JError::raiseWarning(500, Text::_('SALESFORCE_ERR') . $error->message);
 					}
 				}
 				else
 				{
-					JError::raiseWarning(500, FText::_('SALESFORCE_ERR') . $result->errors->message);
+					JError::raiseWarning(500, Text::_('SALESFORCE_ERR') . $result->errors->message);
 				}
 			}
 			else

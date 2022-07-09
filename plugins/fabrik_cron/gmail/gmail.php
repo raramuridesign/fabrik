@@ -11,6 +11,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\User\UserHelper;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Filesystem\File;
@@ -71,7 +72,7 @@ class PlgFabrik_Crongmail extends PlgFabrik_Cron
 
 			if (!$mbox)
 			{
-				throw new RuntimeException(FText::_("PLG_CRON_GMAIL_ERROR_CONNECT") . imap_last_error());
+				throw new RuntimeException(Text::_("PLG_CRON_GMAIL_ERROR_CONNECT") . imap_last_error());
 				continue;
 			}
 

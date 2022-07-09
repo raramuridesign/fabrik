@@ -389,7 +389,7 @@ isClient('administrator')  || !$this->showCartButtons())
 				}
 				else
 				{
-					$row->j2store = FText::sprintf('PLG_FORM_J2STORE_PRODUCT_NOT_FOUND', $source, $id);
+					$row->j2store = Text::sprintf('PLG_FORM_J2STORE_PRODUCT_NOT_FOUND', $source, $id);
 				}
 			}
 		}

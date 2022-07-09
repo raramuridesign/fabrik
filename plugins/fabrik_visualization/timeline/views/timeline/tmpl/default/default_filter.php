@@ -11,6 +11,8 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
+
 if ($this->showFilters) :
 ?>
 <form method="post" action="" name="filter" action="<?php echo $this->filterFormURL; ?>">
@@ -21,7 +23,7 @@ if ($this->showFilters) :
 	  <table class="filtertable fabrikTable fabrikList">
 		  <thead>
 		  	<tr>
-		  		<th><?php echo FText::_($table) ?></th>
+		  		<th><?php echo Text::_($table) ?></th>
 		  		<th style="text-align:right;"><?php echo $this->advancedSearch;?></th>
 		  	</tr>
 		  </thead>
@@ -31,14 +33,14 @@ if ($this->showFilters) :
 					  <?php // Needed when rendered as a J content plugin - otherwise it defaults to 1 each time ?>
 					  <input type="hidden" name="clearfilters" value="0" />
 					  <input type="hidden" name="resetfilters" value="0" />
-					  <input type="submit" class="button" value="<?php echo FText::_('COM_FABRIK_GO') ?>" />
+					  <input type="submit" class="button" value="<?php echo Text::_('COM_FABRIK_GO') ?>" />
 			  	</th>
 			  </tr>
 		  </tfoot>
 		  <tbody>
 		  <tr>
-				<th style="text-align:left"><?php echo FText::_('COM_FABRIK_SEARCH'); ?>:</th>
-				<th style="text-align:right"><a href="#" class="clearFilters"><?php echo FText::_('COM_FABRIK_CLEAR'); ?></a></th>
+				<th style="text-align:left"><?php echo Text::_('COM_FABRIK_SEARCH'); ?>:</th>
+				<th style="text-align:right"><a href="#" class="clearFilters"><?php echo Text::_('COM_FABRIK_CLEAR'); ?></a></th>
 			</tr>
 		  <?php
 			$c = 0;

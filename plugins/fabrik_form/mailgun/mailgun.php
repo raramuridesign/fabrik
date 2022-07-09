@@ -105,8 +105,8 @@ class PlgFabrik_FormMailgun extends PlgFabrik_Form
 			. $input->get('rowid', '', 'string');
 		$this->data['fabrik_viewurl'] = COM_FABRIK_LIVESITE . 'index.php?option=com_' . $this->package . '&amp;view=details&amp;formid=' . $formModel->get('id') . '&amp;rowid='
 			. $input->get('rowid', '', 'string');
-		$this->data['fabrik_editlink'] = '<a href="' . $this->data['fabrik_editurl'] . '">' . FText::_('COM_FABRIK_EDIT') . '</a>';
-		$this->data['fabrik_viewlink'] = '<a href="' . $this->data['fabrik_viewurl'] . '">' . FText::_('COM_FABRIK_VIEW') . '</a>';
+		$this->data['fabrik_editlink'] = '<a href="' . $this->data['fabrik_editurl'] . '">' . Text::_('COM_FABRIK_EDIT') . '</a>';
+		$this->data['fabrik_viewlink'] = '<a href="' . $this->data['fabrik_viewurl'] . '">' . Text::_('COM_FABRIK_VIEW') . '</a>';
 
 		/**
 		 * Added option to run content plugins on message text.  Note that rather than run it one time at the
@@ -923,7 +923,7 @@ isClient('administrator'))
 			}
 		}
 
-		$message = FText::_('Email from') . ' ' . $this->config->get('sitename') . '<br />' . FText::_('Message') . ':'
+		$message = Text::_('Email from') . ' ' . $this->config->get('sitename') . '<br />' . Text::_('Message') . ':'
 			. "<br />===================================<br />" . "<br />" . stripslashes($message);
 
 		return $message;

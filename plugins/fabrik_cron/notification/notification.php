@@ -83,7 +83,7 @@ class PlgFabrik_Cronnotification extends PlgFabrik_Cron
 			 * {observer_name, creator_name, event, record url
 			 * dear %s, %s has %s on %s
 			 */
-			$event = FText::_($row->event);
+			$event = Text::_($row->event);
 			list($listId, $formId, $rowId) = explode('.', $row->reference);
 
 			$url = Route::_('index.php?option=com_fabrik&view=details&listid=' . $listId . '&formid=' . $formId . '&rowid=' . $rowId);
@@ -101,7 +101,7 @@ class PlgFabrik_Cronnotification extends PlgFabrik_Cron
 			$sent[] = (string) $query;
 		}
 
-		$subject = $siteName . ": " . FText::_('FABRIK_NOTIFICATION_EMAIL_SUBJECT');
+		$subject = $siteName . ": " . Text::_('FABRIK_NOTIFICATION_EMAIL_SUBJECT');
 
 		foreach ($usermsgs as $email => $messages)
 		{
