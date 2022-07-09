@@ -962,7 +962,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 
 		$db = Worker::getDbo();
 		$query = $db->getQuery(true);
-		$query->select('db_table_name')->from('#__{package}_lists')->where('id = ' . $productTable);
+		$query->select('db_table_name')->from('#__fabrik_lists')->where('id = ' . $productTable);
 		$db->setQuery($query);
 		$db_table_name = $db->loadResult();
 
@@ -1112,7 +1112,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 
 		$db = Worker::getDbo();
 		$query = $db->getQuery(true);
-		$query->select('db_table_name')->from('#__{package}_lists')->where('id = ' . (int) $params->get('stripe_customers_table'));
+		$query->select('db_table_name')->from('#__fabrik_lists')->where('id = ' . (int) $params->get('stripe_customers_table'));
 		$db->setQuery($query);
 		$db_table_name = $db->loadResult();
 
@@ -1351,7 +1351,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 
 		$db = Worker::getDbo();
 		$query = $db->getQuery(true);
-		$query->select('db_table_name')->from('#__{package}_lists')->where('id = ' . (int) $params->get('stripe_coupons_table'));
+		$query->select('db_table_name')->from('#__fabrik_lists')->where('id = ' . (int) $params->get('stripe_coupons_table'));
 		$db->setQuery($query);
 		$db_table_name = $db->loadResult();
 
