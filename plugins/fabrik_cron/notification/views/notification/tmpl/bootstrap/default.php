@@ -12,6 +12,8 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\HTML\HTMLHelper;
+
 if (count($this->rows) == 0) :
 	echo FText::_('YOU_ARE_NOT_SUBSCRIBED_TO_ANY_NOTIFICATIONS');
 else:
@@ -37,7 +39,7 @@ for ($i = 0, $n = count($this->rows); $i < $n; $i ++) :
 	?>
 			<tr>
 				<td>
-					<?php echo JHTML::_('grid.checkedout', $row, $i);?>
+					<?php echo HTMLHelper_('grid.checkedout', $row, $i);?>
 				</td>
 				<td><a href="<?php echo $row->url?>"><?php echo $row->title?></a></td>
 				<td><?php echo $row->reason?></td>
@@ -53,6 +55,6 @@ endfor;
 	<input type="hidden" name="id" value="<?php echo $this->id; ?>" />
 	<input type="hidden" name="task" value="cron.delete" />
 	<input type="hidden" name="boxchecked" value="0" />
-	<?php echo JHTML::_('form.token'); ?>
+	<?php echo HTMLHelper_('form.token'); ?>
 </form>
 <?php endif;
