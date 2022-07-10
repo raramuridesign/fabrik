@@ -16,6 +16,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\Uri\Uri;
 use Joomla\CMS\Form\Form;
 use Joomla\CMS\Form\FormField;
@@ -92,7 +93,7 @@ window.addEventListener('message', function(event) {
 		$str .= '<a href="#" onclick="' . $js . '">';
 		$str .= '<img src="' . $src . '" alt="Sign in with Twitter"/></a>';
 		$str .= " | <button class=\"button btn\" href=\"#\" onclick=\"$clearjs\">";
-		$str .= FText::_('PLG_FORM_TWITTER_CLEAR_CREDENTIALS') . "</button><br/>";
+		$str .= Text::_('PLG_FORM_TWITTER_CLEAR_CREDENTIALS') . "</button><br/>";
 		$str .= "<br /><input type=\"hidden\" readonly=\"readonly\" name=\""
 			. $this->name . "\" id=\"" . $this->id . "\" value=\"" . $this->value . "\" />";
 

@@ -11,6 +11,8 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
+
 if ($this->showFilters)
 { ?>
 <form method="post" name="filter">
@@ -34,9 +36,9 @@ if ($this->showFilters)
 			}
 	?>
 	  </tbody>
-	  <thead><tr><th colspan='2'><?php echo FText::_($table) ?></th></tr></thead>
+	  <thead><tr><th colspan='2'><?php echo Text::_($table) ?></th></tr></thead>
 	  <tfoot><tr><th colspan='2' style="text-align:right;">
-	  <input type="submit" class="button" value="<?php echo FText::_('GO') ?>" />
+	  <input type="submit" class="button" value="<?php echo Text::_('GO') ?>" />
 	  </th></tr></tfoot></table>
 	  <?php
 		}

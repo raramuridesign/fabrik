@@ -11,6 +11,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\MVC\Controller\BaseController;
 use Joomla\CMS\Filter\InputFilter;
 use Joomla\CMS\Factory;
@@ -65,6 +66,6 @@ class FabrikControllerCroncronnotification extends BaseController
 	{
 		$model = $this->getModel('cronnotification');
 		$model->delete();
-		$this->setRedirect('index.php?option=com_fabrikn&task=cron.cronnotification', FText::_('NOTIFICATIONS_REMOVED'));
+		$this->setRedirect('index.php?option=com_fabrikn&task=cron.cronnotification', Text::_('NOTIFICATIONS_REMOVED'));
 	}
 }

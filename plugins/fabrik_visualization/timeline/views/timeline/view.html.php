@@ -15,6 +15,7 @@ use Joomla\CMS\MVC\View\HtmlView;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Component\ComponentHelper;
 use Joomla\CMS\Factory;
+use Joomla\CMS\HTML\HTMLHelper;
 
 jimport('joomla.application.component.view');
 
@@ -50,7 +51,7 @@ class FabrikViewTimeline extends HtmlView
 
 		if (!$model->canView())
 		{
-			echo FText::_('JERROR_ALERTNOAUTHOR');
+			echo Text::_('JERROR_ALERTNOAUTHOR');
 
 			return false;
 		}
@@ -71,7 +72,7 @@ class FabrikViewTimeline extends HtmlView
 		$tmplpath             = '/plugins/fabrik_visualization/timeline/views/timeline/tmpl/' . $tpl;
 		$this->_setPath('template', JPATH_ROOT . $tmplpath);
 
-		JHTML::stylesheet('media/com_fabrik/css/list.css');
+		HTMLHelper::stylesheet('media/com_fabrik/css/list.css');
 
 		FabrikHelperHTML::stylesheetFromPath($tmplpath . '/template.css');
 		$srcs['FbListFilter']   = 'media/com_fabrik/js/listfilter.js';

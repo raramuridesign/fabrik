@@ -11,6 +11,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\MVC\Model\BaseDatabaseModel;
 use Joomla\CMS\Table\Table;
 use Joomla\CMS\Filter\InputFilter;
@@ -106,7 +107,7 @@ class PlgFabrik_FormPaypal extends PlgFabrik_Form
                 $msg->msg  = "Eval amount code returned false.";
                 $msg       = json_encode($msg);
                 $this->doLog($msgType, $msg);
-                throw new RuntimeException(FText::_('PLG_FORM_PAYPAL_COST_ELEMENT_ERROR'), 500);
+                throw new RuntimeException(Text::_('PLG_FORM_PAYPAL_COST_ELEMENT_ERROR'), 500);
             }
         }
 
@@ -594,7 +595,7 @@ class PlgFabrik_FormPaypal extends PlgFabrik_Form
         }
         else
         {
-            echo FText::_("thanks");
+            echo Text::_("thanks");
         }
     }
 
@@ -956,7 +957,7 @@ class PlgFabrik_FormPaypal extends PlgFabrik_Form
                 if ($send_default_email == '1')
                 {
                     $subject        = $this->config->get('sitename') . ": Error with PayPal IPN from Fabrik";
-                    $payerEmailText = FText::_('PLG_FORM_PAYPAL_ERR_PROCESSING_PAYMENT');
+                    $payerEmailText = Text::_('PLG_FORM_PAYPAL_ERR_PROCESSING_PAYMENT');
                     $mail->sendMail($emailFrom, $emailFrom, $payer_email, $subject, $payerEmailText, false);
                 }
             }

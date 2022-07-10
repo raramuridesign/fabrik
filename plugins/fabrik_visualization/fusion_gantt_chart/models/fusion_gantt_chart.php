@@ -11,6 +11,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\MVC\Model\BaseDatabaseModel;
 use Joomla\CMS\Factory;
 
@@ -219,7 +220,7 @@ class FabrikModelFusion_Gantt_Chart extends FabrikFEModelVisualization
 
 				// Use day = 0 to load last day of next month
 				$end = date('Y/m/d', mktime(0, 0, 0, $m + 1, 0, $y));
-				$m2 = $monthDisplay == 'str' ? FText::_(date('M', $startTime)) : $m;
+				$m2 = $monthDisplay == 'str' ? Text::_(date('M', $startTime)) : $m;
 				$this->fc->addGanttCategory($m2, "start=" . $start . ";end=" . $end . ";");
 			}
 		}

@@ -49,7 +49,7 @@ class PlgFabrik_ListRadius_search extends PlgFabrik_List
 
 		if ($params->get('myloc', 1) == 1)
 		{
-			$options[] = HTMLHelper::_('select.option', 'mylocation', FText::_('PLG_VIEW_RADIUS_MY_LOCATION'));
+			$options[] = HTMLHelper::_('select.option', 'mylocation', Text::_('PLG_VIEW_RADIUS_MY_LOCATION'));
 		}
 		else if ($default_search == 'mylocation')
 		{
@@ -68,7 +68,7 @@ class PlgFabrik_ListRadius_search extends PlgFabrik_List
 
 		if ($params->get('coords', 1) == 1)
 		{
-			$options[] = HTMLHelper::_('select.option', 'latlon', FText::_('PLG_VIEW_RADIUS_COORDINATES'));
+			$options[] = HTMLHelper::_('select.option', 'latlon', Text::_('PLG_VIEW_RADIUS_COORDINATES'));
 		}
 		else if ($default_search == 'latlon')
 		{
@@ -77,7 +77,7 @@ class PlgFabrik_ListRadius_search extends PlgFabrik_List
 
 		if ($params->get('geocode', 1) == 1)
 		{
-			$options[] = HTMLHelper::_('select.option', 'geocode', FText::_('PLG_VIEW_RADIUS_GEOCODE'));
+			$options[] = HTMLHelper::_('select.option', 'geocode', Text::_('PLG_VIEW_RADIUS_GEOCODE'));
 		}
 
 		$selectName = 'radius_search_type' . $this->renderOrder . '[]';
@@ -129,7 +129,7 @@ class PlgFabrik_ListRadius_search extends PlgFabrik_List
 		$model = $this->getModel();
 		$params = $this->getParams();
 		$f = new stdClass;
-		$f->label = FText::_($params->get('radius_label', 'Radius search'));
+		$f->label = Text::_($params->get('radius_label', 'Radius search'));
 		FabrikHelperHTML::stylesheet('plugins/fabrik_list/radius_search/radius_search.css');
 
 		$layoutData = new stdClass;

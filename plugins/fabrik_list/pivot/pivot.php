@@ -11,6 +11,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\MVC\Model\BaseDatabaseModel;
 use Joomla\Utilities\ArrayHelper;
 
@@ -142,7 +143,7 @@ class PlgFabrik_ListPivot extends PlgFabrik_List
 
 		if ($xCol === '' || $yCol === '')
 		{
-			throw new UnexpectedValueException(FText::_('PLG_LIST_PIVOT_ERROR_X_AND_Y_COL_MUST_BE_SELECTED'));
+			throw new UnexpectedValueException(Text::_('PLG_LIST_PIVOT_ERROR_X_AND_Y_COL_MUST_BE_SELECTED'));
 		}
 		//pivot___date
 
@@ -183,7 +184,7 @@ class PlgFabrik_ListPivot extends PlgFabrik_List
 			}
 		}
 
-		$headings['pivot_total'] = FText::_('PLG_LIST_PIVOT_LIST_X_TOTAL');
+		$headings['pivot_total'] = Text::_('PLG_LIST_PIVOT_LIST_X_TOTAL');
 		$args['headingClass']['pivot_total'] = $headingClass;
 		$args['cellClass']['pivot_total'] = $cellClass;
 
@@ -356,7 +357,7 @@ class PlgFabrik_ListPivot extends PlgFabrik_List
 
 		// Add totals @ bottom
 		$yColTotals = new stdClass;
-		$yColTotals->$yCol = FText::_('PLG_LIST_PIVOT_LIST_Y_TOTAL');
+		$yColTotals->$yCol = Text::_('PLG_LIST_PIVOT_LIST_Y_TOTAL');
 		$total = 0;
 
 		foreach ($xCols as $x)

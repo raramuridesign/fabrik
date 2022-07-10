@@ -144,7 +144,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 					$msg->msg  = "Eval amount code returned false.";
 					$msg       = json_encode($msg);
 					$this->doLog($msgType, $msg);
-					throw new RuntimeException(FText::_('PLG_FORM_STRIPE_COST_ELEMENT_ERROR'), 500);
+					throw new RuntimeException(Text::_('PLG_FORM_STRIPE_COST_ELEMENT_ERROR'), 500);
 				}
 			}
 
@@ -195,7 +195,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 					$msg->msg  = "Eval item code returned false.";
 					$msg       = json_encode($msg);
 					$this->doLog($msgType, $msg);
-					throw new RuntimeException(FText::_('PLG_FORM_STRIPE_ITEM_ELEMENT_ERROR'), 500);
+					throw new RuntimeException(Text::_('PLG_FORM_STRIPE_ITEM_ELEMENT_ERROR'), 500);
 				}
 			}
 
@@ -304,7 +304,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 				$err  = $body['error'];
 				$logErrMsg = json_encode($body);
 				$logErrType = 'fabrik.form.stripe.charge.err';
-				$chargeErrMsg = FText::sprintf('PLG_FORM_STRIPE_ERROR_DECLINED', $err['message']);
+				$chargeErrMsg = Text::sprintf('PLG_FORM_STRIPE_ERROR_DECLINED', $err['message']);
 			}
 			catch (\Stripe\Error\RateLimit $e)
 			{
@@ -576,13 +576,13 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 			$secretKey = trim($params->get('stripe_secret_key', ''));
 		}
 
-		$opts->name = FText::_(
+		$opts->name = Text::_(
 			$w->parseMessageForPlaceHolder(
 				$params->get('stripe_dialog_name', ''),
 				$this->data
 			)
 		);
-		$opts->panelLabel = FText::_($params->get('stripe_panel_label', 'PLG_FORM_STRIPE_PAY'));
+		$opts->panelLabel = Text::_($params->get('stripe_panel_label', 'PLG_FORM_STRIPE_PAY'));
 		$opts->allowRememberMe = false;
 		$opts->zipCode = $params->get('stripe_zipcode_check', '1') === '1';
 		$opts->couponElement = StringHelper::safeColNameToArrayKey($params->get('stripe_coupon_element'));
@@ -648,7 +648,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 					$msg->msg  = "Eval amount code returned false.";
 					$msg       = json_encode($msg);
 					$this->doLog($msgType, $msg);
-					throw new RuntimeException(FText::_('PLG_FORM_STRIPE_COST_ELEMENT_ERROR'), 500);
+					throw new RuntimeException(Text::_('PLG_FORM_STRIPE_COST_ELEMENT_ERROR'), 500);
 				}
 			}
 
@@ -711,7 +711,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 					$msg->msg  = "Eval item code returned false.";
 					$msg       = json_encode($msg);
 					$this->doLog($msgType, $msg);
-					throw new RuntimeException(FText::_('PLG_FORM_STRIPE_ITEM_ELEMENT_ERROR'), 500);
+					throw new RuntimeException(Text::_('PLG_FORM_STRIPE_ITEM_ELEMENT_ERROR'), 500);
 				}
 			}
 
@@ -779,7 +779,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 				$logErrType   = 'fabrik.form.stripe.customer.err';
 				$body = $e->getJsonBody();
 				$err  = $body['error'];
-				$customerErrMsg = FText::sprintf('PLG_FORM_STRIPE_ERROR_CUSTOMER',$err['message'] );
+				$customerErrMsg = Text::sprintf('PLG_FORM_STRIPE_ERROR_CUSTOMER',$err['message'] );
 			}
 			catch (\Stripe\Error\Authentication $e)
 			{
@@ -842,7 +842,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 			if ($params->get('stripe_customers_allow_update_cc', '0') === '1')
 			{
 				$opts->updateCheckout = true;
-				$opts->panelLabel = FText::_(
+				$opts->panelLabel = Text::_(
 					$params->get('stripe_customers_update_button_name', "PLG_FORM_STRIPE_CUSTOMERS_UPDATE_CC_BUTTON_NAME")
 				);
 				$dep       = new stdClass;
@@ -864,7 +864,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 			$layoutData = new stdClass();
 			$layoutData->testMode = $this->isTestMode();
 			$layoutData->useUpdateButton = $opts->updateCheckout;
-			$layoutData->updateButtonName = FText::_($params->get('stripe_customers_update_button_name', "PLG_FORM_STRIPE_CUSTOMERS_UPDATE_CC_BUTTON_NAME"));
+			$layoutData->updateButtonName = Text::_($params->get('stripe_customers_update_button_name', "PLG_FORM_STRIPE_CUSTOMERS_UPDATE_CC_BUTTON_NAME"));
 			$layoutData->card = $card;
 			$layoutData->amount = $amount;
 			$layoutData->currencyCode = $currencyCode;
@@ -872,7 +872,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 			$layoutData->item = $item;
 			$layoutData->showCoupon = $this->useCoupon();
 			$layoutData->couponMsg = $this->couponMsg;
-			$layoutData->bottomText = FText::_($params->get('stripe_charge_bottom_text_existing', 'PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_EXISTING'));
+			$layoutData->bottomText = Text::_($params->get('stripe_charge_bottom_text_existing', 'PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_EXISTING'));
 			$this->html = $layout->render($layoutData);
 		}
 		else
@@ -884,7 +884,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 			$layoutData->amount       = $amount;
 			$layoutData->currencyCode = $currencyCode;
 			$layoutData->langTag      = Factory::getLanguage()->getTag();
-			$layoutData->bottomText   = FText::_($params->get('stripe_charge_bottom_text_new', 'PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_NEW'));
+			$layoutData->bottomText   = Text::_($params->get('stripe_charge_bottom_text_new', 'PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_NEW'));
 			$layoutData->bottomText   = $w->parseMessageForPlaceHolder($layoutData->bottomText, $this->data);
 			$layoutData->item         = $item;
 			$layoutData->showCoupon   = $this->useCoupon();
@@ -894,7 +894,7 @@ class PlgFabrik_FormStripe extends PlgFabrik_Form
 			{
 				$opts->failedValidation = true;
 				$layoutData->failedValidation = true;
-				$layoutData->failedValidationMsg = FText::_($params->get('stripe_charge_failed_validation_text', 'PLG_FORM_STRIPE_CHARGE_FAILED_VALIDATION_TEXT'));
+				$layoutData->failedValidationMsg = Text::_($params->get('stripe_charge_failed_validation_text', 'PLG_FORM_STRIPE_CHARGE_FAILED_VALIDATION_TEXT'));
 				$opts->stripeTokenId   = ArrayHelper::getValue($this->data, 'stripe_token_id', '');
 				$opts->stripeTokenEmail = ArrayHelper::getValue($this->data, 'stripe_token_email', '');
 				$opts->stripeTokenOpts = ArrayHelper::getValue($this->data, 'stripe_token_opts', '{}');
