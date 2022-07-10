@@ -12,6 +12,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\Factory;
 
 $d           = $displayData;
@@ -32,7 +33,7 @@ if ($d->usePopup) :
 
 		<div class="row-fluid">
 			<div class="<?php echo FabrikHelperHTML::getGridSpan('4'); ?>">
-				<?php echo FText::_('PLG_VIEW_RADIUS_DISTANCE'); ?>
+				<?php echo Text::_('PLG_VIEW_RADIUS_DISTANCE'); ?>
 			</div>
 			<div class="<?php echo FabrikHelperHTML::getGridSpan('8'); ?>">
 				<div class="slider_cont" style="width:200px;">
@@ -47,7 +48,7 @@ if ($d->usePopup) :
 		</div>
 		<div class="row-fluid">
 			<div class="<?php echo FabrikHelperHTML::getGridSpan('4'); ?>">
-				<label for="radius_search_type0"><?php echo FText::_('PLG_VIEW_RADIUS_FROM'); ?></label>
+				<label for="radius_search_type0"><?php echo Text::_('PLG_VIEW_RADIUS_FROM'); ?></label>
 			</div>
 			<div class="<?php echo FabrikHelperHTML::getGridSpan('8'); ?>">
 				<?php echo $d->select; ?>
@@ -77,7 +78,7 @@ if ($d->usePopup) :
 
 				<div class="row-fluid">
 					<div class="<?php echo FabrikHelperHTML::getGridSpan('4'); ?>">
-						<label for="radius_search_lat_<?php echo $d->renderOrder; ?>"><?php echo FText::_('PLG_VIEW_RADIUS_LATITUDE'); ?>
+						<label for="radius_search_lat_<?php echo $d->renderOrder; ?>"><?php echo Text::_('PLG_VIEW_RADIUS_LATITUDE'); ?>
 						</label>
 					</div>
 					<div class="<?php echo FabrikHelperHTML::getGridSpan('8'); ?>">
@@ -86,7 +87,7 @@ if ($d->usePopup) :
 				</div>
 				<div class="row-fluid">
 					<div class="<?php echo FabrikHelperHTML::getGridSpan('4'); ?>">
-						<label for="radius_search_lon_<?php echo $d->renderOrder; ?>"><?php echo FText::_('PLG_VIEW_RADIUS_LONGITUDE'); ?>
+						<label for="radius_search_lon_<?php echo $d->renderOrder; ?>"><?php echo Text::_('PLG_VIEW_RADIUS_LONGITUDE'); ?>
 						</label>
 					</div>
 					<div class="<?php echo FabrikHelperHTML::getGridSpan('8'); ?>">
@@ -107,7 +108,7 @@ if ($d->usePopup) :
 				<?php
 				if (!$d->geocodeAsYouType) :
 					?>
-					<button class="btn button"><?php echo FText::_('COM_FABRIK_SEARCH'); ?></button>
+					<button class="btn button"><?php echo Text::_('COM_FABRIK_SEARCH'); ?></button>
 					<?php
 				endif;
 				?>
@@ -117,7 +118,7 @@ if ($d->usePopup) :
 				<input type="hidden" name="radius_search_geocode_lon<?php echo $d->renderOrder; ?>" value="<?php echo $d->searchLongitude; ?>" />
 			</div>
 			<div class="radius_search_buttons" id="radius_search_buttons<?php echo $d->renderOrder; ?>">
-				<input type="button" class="btn btn-link cancel" value="<?php echo FText::_('COM_FABRIK_CANCEL'); ?>" />
+				<input type="button" class="btn btn-link cancel" value="<?php echo Text::_('COM_FABRIK_CANCEL'); ?>" />
 				<input type="button" name="filter" value="Go" class="fabrik_filter_submit button btn btn-primary"></div>
 		</div>
 	</div>
@@ -132,7 +133,7 @@ else :
         <div class="row">
             <div class="<?php echo FabrikHelperHTML::getGridSpan('1'); ?>">
                 <label for="radius_search_geocomplete_field<?php echo $d->renderOrder; ?>">
-                    <?php echo FText::_('PLG_VIEW_RADIUS_WITHIN'); ?>
+                    <?php echo Text::_('PLG_VIEW_RADIUS_WITHIN'); ?>
                 </label>
             </div>
             <div class="<?php echo FabrikHelperHTML::getGridSpan('11'); ?>">
@@ -142,7 +143,7 @@ else :
         <div class="row">
             <div class="<?php echo FabrikHelperHTML::getGridSpan('1'); ?>">
                 <label for="radius_search_distance<?php echo $d->renderOrder; ?>">
-					<?php echo FText::_('PLG_VIEW_RADIUS_OF'); ?>
+					<?php echo Text::_('PLG_VIEW_RADIUS_OF'); ?>
                 </label>
             </div>
             <div class="<?php echo FabrikHelperHTML::getGridSpan('11'); ?>">
@@ -155,7 +156,7 @@ else :
         </div>
         <div class="row <?php echo $d->emptyMsgClass; ?>">
             <div class=" fabrikRadiusSearchEmptyMsg <?php echo FabrikHelperHTML::getGridSpan('12'); ?>">
-                <?php echo FText::_('PLG_VIEW_RADIUS_EMPTY_MSG'); ?>
+                <?php echo Text::_('PLG_VIEW_RADIUS_EMPTY_MSG'); ?>
             </div>
         </div>
 

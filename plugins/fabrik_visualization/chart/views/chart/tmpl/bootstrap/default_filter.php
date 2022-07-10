@@ -11,6 +11,8 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
+
 if ($this->showFilters) : ?>
 <form method="post" name="filter">
 <?php
@@ -32,7 +34,7 @@ if ($this->showFilters) : ?>
 	</tbody>
 	<thead>
 		<tr>
-			<th colspan="2"><?php echo FText::_($table) ?></th>
+			<th colspan="2"><?php echo Text::_($table) ?></th>
 		</tr>
 	</thead>
 	<tfoot>
@@ -40,7 +42,7 @@ if ($this->showFilters) : ?>
 			<th colspan="2" style="text-align:right;">
 				<?php echo FabrikHelperHTML::icon('icon-filter'); ?>
   				<button type="submit" class="btn btn-primary">
-  					<?php echo FText::_('GO') ?>
+  					<?php echo Text::_('GO') ?>
   				</button>
 			</th>
 		</tr>

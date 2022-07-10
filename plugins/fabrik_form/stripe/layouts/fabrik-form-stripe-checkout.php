@@ -12,6 +12,8 @@
 
 defined('_JEXEC') or die;
 
+use Joomla\CMS\Language\Text;
+
 $d = $displayData;
 
 if (class_exists('NumberFormatter'))
@@ -30,7 +32,7 @@ $d->bottomText = str_ireplace('{stripe_item}', '<span class="fabrikStripeItem">'
 if ($d->testMode) :
 	?>
     <div class="fabriStripeTestMode">
-		<?php echo FText::_('PLG_FORM_STRIPE_TEST_MODE_TEXT'); ?>
+		<?php echo Text::_('PLG_FORM_STRIPE_TEST_MODE_TEXT'); ?>
     </div>
 <?php
 endif;

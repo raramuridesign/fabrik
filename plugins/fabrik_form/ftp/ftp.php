@@ -11,6 +11,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\MVC\Model\BaseDatabaseModel;
 use Joomla\CMS\Filesystem\File;
 use Joomla\CMS\Filesystem\Path;
@@ -92,8 +93,8 @@ class PlgFabrik_FormFtp extends PlgFabrik_Form
 			. $formModel->get('id') . "&amp;rowid=" . $input->get('rowid', '', 'string');
 		$viewURL = COM_FABRIK_LIVESITE . "index.php?option=com_fabrik&amp;view=details&amp;fabrik=" . $formModel->get('id')
 		. "&amp;rowid=" . $input->get('rowid', '', 'string');
-		$editLink = "<a href=\"$editURL\">" . FText::_('EDIT') . "</a>";
-		$viewLink = "<a href=\"$viewURL\">" . FText::_('VIEW') . "</a>";
+		$editLink = "<a href=\"$editURL\">" . Text::_('EDIT') . "</a>";
+		$viewLink = "<a href=\"$viewURL\">" . Text::_('VIEW') . "</a>";
 		$message = str_replace('{fabrik_editlink}', $editLink, $message);
 		$message = str_replace('{fabrik_viewlink}', $viewLink, $message);
 		$message = str_replace('{fabrik_editurl}', $editURL, $message);
@@ -143,7 +144,7 @@ class PlgFabrik_FormFtp extends PlgFabrik_Form
 					{
 						if (!ftp_chdir($conn_id, $ftpChDir))
 						{
-							$this->app->enqueueMessage(FText::_('PLG_FORM_FTP_COULD_NOT_CHDIR'), 'notice');
+							$this->app->enqueueMessage(Text::_('PLG_FORM_FTP_COULD_NOT_CHDIR'), 'notice');
 							File::delete($tmpFile);
 
 							return false;
@@ -152,7 +153,7 @@ class PlgFabrik_FormFtp extends PlgFabrik_Form
 
 					if (!ftp_put($conn_id, $ftpFileName, $tmpFile, FTP_ASCII))
 					{
-						$this->app->enqueueMessage(FText::_('PLG_FORM_FTP_COULD_NOT_SEND_FILE'), 'notice');
+						$this->app->enqueueMessage(Text::_('PLG_FORM_FTP_COULD_NOT_SEND_FILE'), 'notice');
 						File::delete($tmpFile);
 
 						return false;
@@ -160,7 +161,7 @@ class PlgFabrik_FormFtp extends PlgFabrik_Form
 				}
 				else
 				{
-					$this->app->enqueueMessage(FText::_('PLG_FORM_FTP_COULD_NOT_LOGIN'), 'notice');
+					$this->app->enqueueMessage(Text::_('PLG_FORM_FTP_COULD_NOT_LOGIN'), 'notice');
 					File::delete($tmpFile);
 
 					return false;
@@ -342,7 +343,7 @@ isClient('administrator'))
 			}
 		}
 
-		$message = FText::_('Email from') . ' ' . $this->config->get('sitename') . '<br />' . FText::_('Message') . ':'
+		$message = Text::_('Email from') . ' ' . $this->config->get('sitename') . '<br />' . Text::_('Message') . ':'
 			. "<br />===================================<br />" . "<br />" . stripslashes($message);
 
 		return $message;

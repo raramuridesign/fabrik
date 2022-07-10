@@ -11,6 +11,7 @@
 // No direct access
 defined('_JEXEC') or die('Restricted access');
 
+use Joomla\CMS\Language\Text;
 use Joomla\CMS\Filesystem\File;
 use Fabrik\Helpers\Image;
 
@@ -73,7 +74,7 @@ class PlgFabrik_ListDownload extends PlgFabrik_List
 	 */
 	protected function buttonLabel()
 	{
-		return FText::_($this->getParams()->get('download_button_label', parent::buttonLabel()));
+		return Text::_($this->getParams()->get('download_button_label', parent::buttonLabel()));
 	}
 
 	/**
@@ -238,13 +239,13 @@ class PlgFabrik_ListDownload extends PlgFabrik_List
 					}
 					else
 					{
-						$zipErr .= FText::_('ZipArchive add error: ' . $zipAdd);
+						$zipErr .= Text::_('ZipArchive add error: ' . $zipAdd);
 					}
 				}
 
 				if (!$zip->close())
 				{
-					$zipErr = FText::_('ZipArchive close error') . ($zip->status);
+					$zipErr = Text::_('ZipArchive close error') . ($zip->status);
 				}
 
 				if ($downloadResize)
@@ -279,18 +280,18 @@ class PlgFabrik_ListDownload extends PlgFabrik_List
 					}
 					else
 					{
-						$zipErr .= FText::_('PLG_FABRIK_LIST_DOWNLOAD_ZIP_EMPTY');
+						$zipErr .= Text::_('PLG_FABRIK_LIST_DOWNLOAD_ZIP_EMPTY');
 					}
 				}
 			}
 			else
 			{
-				$zipErr = FText::_('ZipArchive open error, cannot create file : ' . $zipFile . ' : ' . $zipRes);
+				$zipErr = Text::_('ZipArchive open error, cannot create file : ' . $zipFile . ' : ' . $zipRes);
 			}
 		}
 		else
 		{
-			$zipErr = FText::_("PLG_FABRIK_LIST_DOWNLOAD_ZIP_NO_FILES");
+			$zipErr = Text::_("PLG_FABRIK_LIST_DOWNLOAD_ZIP_NO_FILES");
 		}
 
 		if (empty($zipErr))
