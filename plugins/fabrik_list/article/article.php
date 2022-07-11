@@ -74,7 +74,7 @@ class PlgFabrik_ListArticle extends PlgFabrik_List
 	 */
 	protected function buttonLabel()
 	{
-		return FText::_('PLG_LIST_ARTICLE_UPDATE_ARTICLE');
+		return Text::_('PLG_LIST_ARTICLE_UPDATE_ARTICLE');
 	}
 
 	/**

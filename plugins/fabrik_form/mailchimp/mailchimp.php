@@ -112,7 +112,7 @@ class PlgFabrik_FormMailchimp extends PlgFabrik_Form
 					$this->html = '
 					<label class="mailchimpsignup">
 						<input type="checkbox" name="fabrik_mailchimp_signup" class="fabrik_mailchimp_signup" value="1" ' . $checked . '/>' .
-						FText::_($params->get('mailchimp_signuplabel')) .
+						Text::_($params->get('mailchimp_signuplabel')) .
 						'</label>';
 				}
 				else
@@ -508,7 +508,7 @@ class PlgFabrik_FormMailchimp extends PlgFabrik_Form
 			}
 			else
 			{
-				$this->app->enqueueMessage(FText::_('PLG_FORM_MAILCHIMP_API_FAIL'));
+				$this->app->enqueueMessage(Text::_('PLG_FORM_MAILCHIMP_API_FAIL'));
 			}
 
 			if ((bool) $params->get('mailchimp_fail_on_error', true) === true)
@@ -526,7 +526,7 @@ class PlgFabrik_FormMailchimp extends PlgFabrik_Form
 		{
 			if ($params->get('mailchimp_success', '0') === '1')
 			{
-				$this->app->enqueueMessage(FText::_($params->get('mailchimp_success_msg', 'PLG_FORM_MAILCHIMP_API_SUCCESS')));
+				$this->app->enqueueMessage(Text::_($params->get('mailchimp_success_msg', 'PLG_FORM_MAILCHIMP_API_SUCCESS')));
 			}
 
 			return true;
