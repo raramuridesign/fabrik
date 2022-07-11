@@ -9,6 +9,7 @@ module.exports = {
     ],
     'corePackageFiles': [
         'plg_fabrik_system_{version}.zip',
+        'plg_fabrik_schedule_{version}.zip',
         'plg_fabrik_element_jdate_{version}.zip',
         'plg_fabrik_element_internalid_{version}.zip',
         'plg_fabrik_element_field_{version}.zip',
@@ -26,7 +27,6 @@ module.exports = {
         'mod_fabrik_form_{version}.zip',
         'mod_fabrik_list_{version}.zip',
 /*
-        'plg_fabrik_schedule_{version}.zip',
         'plg_fabrik_content_{version}.zip',
         'plg_fabrik_cron_php_{version}.zip',
         'plg_fabrik_element_button_{version}.zip',
