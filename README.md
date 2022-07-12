@@ -30,16 +30,14 @@ Build and Install:
 ================
 
 The build tool should be working now.
-Temporary only plugins plg_fabrik_element_field, plg_fabrik_element_internalid, plg_fabrik_element_jdate and plg_fabrik_system are installed.
-More plugins will be added as they are updated for J!4.
-
-Temporary manually install mootools-core.js & mootools-more.js (from fabrik 3.10) in media\system\js.
+Temporary only a limited amount of plugins are installed.
+More plugins will be added as they are updated for J!4 and working.
 
 Progress:
 ================
 
-2022-07-10: 
-Install is working, only temporary manually install mootools-core.js & mootools-more.js in media\system\js. 
+2022-07-12: 
+Install is working. 
 
 A new list can be created and a new (field)element can be added. A list can be copied, can be trashed and trash can be emptied.
 A new list menu item can be created and the frontend is also working. It only needs some styling.
