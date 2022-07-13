@@ -37,11 +37,11 @@ if ($d->canUse) :
     // Jaanus - Submitting notes before saving form data results with the notes belonging to nowhere but new, not submitted forms.
     if ($d->primaryKey > 0) :
         if ($d->fieldType == 'field') :?>
-            <input class="fabrikinput inputbox text span12" name="<?php echo $d->name; ?>" />
+            <input class="fabrikinput inputbox text col-md-12" name="<?php echo $d->name; ?>" />
         <?php
         else:
             ?>
-            <textarea class="fabrikinput inputbox text span12" name="<?php echo $d->name; ?>" cols="50" rows="3" /></textarea>
+            <textarea class="fabrikinput inputbox text col-md-12" name="<?php echo $d->name; ?>" cols="50" rows="3" /></textarea>
         <?php
         endif;
         ?>

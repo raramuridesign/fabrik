@@ -20,7 +20,7 @@
 			
 			<field name="bootstrap_class"
 				type="bootstrapfieldclass"
-				default="span12"
+				default="col-md-12"
 				label="PLG_ELEMENT_BOOTSTRAP_CLASS_LABEL"
 				description="PLG_ELEMENT_BOOTSTRAP_CLASS_DESC" />
 

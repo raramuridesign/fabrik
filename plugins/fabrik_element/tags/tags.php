@@ -98,7 +98,7 @@ class PlgFabrik_ElementTags extends PlgFabrik_ElementDatabasejoin
 			// Note: the Chosen js should be loaded via require statement
 			HTMLHelper::_('stylesheet', 'jui/chosen.css', false, true);
 
-			$bootstrapClass = $params->get('bootstrap_class', 'span12');
+			$bootstrapClass = $params->get('bootstrap_class', 'col-md-12');
 			$attr = 'multiple="multiple" class="inputbox ' . $bootstrapClass. ' small"';
 			$attr .= ' data-placeholder="' . Text::_('JGLOBAL_SELECT_SOME_OPTIONS') . '"';
 			$selected = $tmp;

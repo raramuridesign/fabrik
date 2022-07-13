@@ -67,7 +67,7 @@ define(['jquery', 'fab/element'], function (jQuery, FbElement) {
                         if (this.options.j3) {
                             var rows = this.element.getElement('div');
                             var row = new Element('div', {'class': 'row-fluid'});
-                            var inner_row = new Element('div', {'class': 'span12'}).set('html', json.label).inject(row);
+                            var inner_row = new Element('div', {'class': 'col-md-12'}).set('html', json.label).inject(row);
                             inner_row.inject(rows);
                         }
                         else {

@@ -33,7 +33,7 @@
 			       valueformat="tableelement"
 			       usestep="true"
 			       addbrackets="true"
-			       class="span5"
+			       class="col-md-5"
 			       description="PLG_FABRIK_FORM_MAILGUN_TO_DESC"
 			       label="PLG_FABRIK_FORM_MAILGUN_TO_LABEL"/>
 
@@ -64,7 +64,7 @@
 			       valueformat="tableelement"
 			       usestep="true"
 			       addbrackets="true"
-			       class="span5"
+			       class="col-md-5"
 			       description="PLG_FABRIK_MAILGUN_FROM_DESC"
 			       label="PLG_FABRIK_MAILGUN_FROM_LABEL"/>
 
@@ -77,7 +77,7 @@
 			       valueformat="tableelement"
 			       usestep="true"
 			       addbrackets="true"
-			       class="span5"
+			       class="col-md-5"
 			       description="PLG_FABRIK_MAILGUN_RETURN_PATH_DESC"
 			       label="PLG_FABRIK_MAILGUN_RETURN_PATH_LABEL"/>
 
@@ -90,7 +90,7 @@
 			       valueformat="tableelement"
 			       usestep="true"
 			       addbrackets="true"
-			       class="span5"
+			       class="col-md-5"
 			       description="PLG_FABRIK_FORM_MAILGUN_SUBJECT_DESC"
 			       label="PLG_FABRIK_FORM_MAILGUN_SUBJECT_LABEL"/>
 
