@@ -40,7 +40,7 @@ class FabrikViewMedia extends HtmlView
 	{
 		$app = Factory::getApplication();
 		$input = $app->input;
-		$j3 = FabrikWorker::j3();
+		$j3 = true;
 		$model = $this->getModel();
 		$usersConfig = ComponentHelper::getParams('com_fabrik');
 		$model->setId($input->getInt('id', $usersConfig->get('visualizationid', $input->getInt('visualizationid', 0))));

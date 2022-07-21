@@ -39,7 +39,7 @@ class FabrikViewApprovals extends HtmlView
 	public function display($tpl = 'default')
 	{
 		$model = $this->getModel();
-		$j3 = FabrikWorker::j3();
+		$j3 = true;
 		$app = Factory::getApplication();
 		$input = $app->input;
 		$usersConfig = ComponentHelper::getParams('com_fabrik');
