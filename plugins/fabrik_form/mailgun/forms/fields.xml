@@ -45,7 +45,7 @@
 				repeat="true" />
 
 			<field name="mailgun_to_group"
-				type="usergroup"
+				type="usergrouplist"
 				description="PLG_FABRIK_FORM_MAILGUN_GROUP_DESC"
 				label="PLG_FABRIK_FORM_MAILGUN_GROUP_LABEL"
 				multiple="true"
