@@ -122,7 +122,7 @@
 				   valueformat="tableelement"/>
 
 			<field name="zoom_users_usergroup"
-				   type="usergroup"
+				   type="usergrouplist"
 				   default="0"
 				   description="PLG_FORM_ZOOM_USERS_DEFAULT_GROUP_LABEL"
 				   label="PLG_FORM_ZOOM_USERS_DEFAULT_GROUP_LABEL"
