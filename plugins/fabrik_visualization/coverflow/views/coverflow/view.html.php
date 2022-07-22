@@ -40,7 +40,6 @@ class FabrikViewCoverflow extends HtmlView
 	{
 		$app = Factory::getApplication();
 		$input = $app->input;
-		$j3 = true;
 		$srcs = FabrikHelperHTML::framework();
 		$usersConfig = ComponentHelper::getParams('com_fabrik');
 		$model = $this->getModel();
@@ -67,7 +66,7 @@ class FabrikViewCoverflow extends HtmlView
 		$this->showFilters = $model->showFilters();
 		$this->filters = $this->get('Filters');
 		$this->filterFormURL = $this->get('FilterFormURL');
-		$tpl = $j3 ? 'bootstrap' : 'default';
+		$tpl = 'bootstrap';
 		$tmplpath = JPATH_ROOT . '/plugins/fabrik_visualization/coverflow/views/coverflow/tmpl/' . $tpl;
 		$this->_setPath('template', $tmplpath);
 		$srcs['FbListFilter'] = 'media/com_fabrik/js/listfilter.js';

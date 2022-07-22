@@ -40,7 +40,6 @@ class FabrikViewTimeline extends HtmlView
 	{
 		$app   = Factory::getApplication();
 		$input = $app->input;
-		$j3    = true;
 		$srcs  = FabrikHelperHTML::framework();
 
 		$usersConfig = ComponentHelper::getParams('com_fabrik');
@@ -67,7 +66,7 @@ class FabrikViewTimeline extends HtmlView
 		$this->params         = $params;
 		$this->width          = $params->get('timeline_width', '700');
 		$this->height         = $params->get('timeline_height', '300');
-		$tpl                  = $j3 ? 'bootstrap' : 'default';
+		$tpl                  = 'bootstrap';
 		$tpl                  = $params->get('timeline_layout', $tpl);
 		$tmplpath             = '/plugins/fabrik_visualization/timeline/views/timeline/tmpl/' . $tpl;
 		$this->_setPath('template', JPATH_ROOT . $tmplpath);

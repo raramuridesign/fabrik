@@ -40,7 +40,6 @@ class FabrikViewMedia extends HtmlView
 	{
 		$app = Factory::getApplication();
 		$input = $app->input;
-		$j3 = true;
 		$model = $this->getModel();
 		$usersConfig = ComponentHelper::getParams('com_fabrik');
 		$model->setId($input->getInt('id', $usersConfig->get('visualizationid', $input->getInt('visualizationid', 0))));
@@ -75,7 +74,7 @@ class FabrikViewMedia extends HtmlView
 		$this->filterFormURL = $model->getFilterFormURL();
 		$this->filters = $this->get('Filters');
 		$this->params = $model->getParams();
-		$tpl = $j3 ? 'bootstrap' : 'default';
+		$tpl = 'bootstrap';
 		$tpl = $params->get('media_layout', $tpl);
 		$tplpath = JPATH_ROOT . '/plugins/fabrik_visualization/media/views/media/tmpl/' . $tpl;
 		$this->_setPath('template', $tplpath);

@@ -42,9 +42,8 @@ class FabrikViewNotification extends HtmlView
 		$model->loadLang();
 		$this->rows = $model->getUserNotifications();
 		$this->id = $model->getId();
-		$j3 = true;
 		$viewName = $this->getName();
-		$tpl = $j3 ? 'bootstrap' : 'default';
+		$tpl = 'bootstrap';
 		$tmplpath = JPATH_ROOT . '/plugins/fabrik_cron/notification/views/notification/tmpl/' . $tpl;
 		$this->_setPath('template', $tmplpath);
 		FabrikHelperHTML::stylesheetFromPath('plugins/fabrik_cron/notification/views/notification/tmpl/' . $tpl . '/template.css');

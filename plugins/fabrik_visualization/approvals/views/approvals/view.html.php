@@ -39,7 +39,6 @@ class FabrikViewApprovals extends HtmlView
 	public function display($tpl = 'default')
 	{
 		$model = $this->getModel();
-		$j3 = true;
 		$app = Factory::getApplication();
 		$input = $app->input;
 		$usersConfig = ComponentHelper::getParams('com_fabrik');
@@ -59,7 +58,7 @@ class FabrikViewApprovals extends HtmlView
 		$this->containerId = $this->get('ContainerId');
 		$this->calName = $this->get('VizName');
 		$this->params = $model->getParams();
-		$tpl = $j3 ? 'bootstrap' : $tpl;
+		$tpl = 'bootstrap';
 		$this->_setPath('template', JPATH_SITE . '/plugins/fabrik_visualization/approvals/views/approvals/tmpl/' . $tpl);
 
 		FabrikHelperHTML::stylesheetFromPath('plugins/fabrik_visualization/approvals/views/approvals/tmpl/' . $tpl . '/template.css');

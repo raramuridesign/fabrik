@@ -76,7 +76,7 @@ class FabrikViewFusionchart extends HtmlView
 		$this->filters = $this->get('Filters');
 		$this->showFilters = $model->showFilters();
 		$this->filterFormURL = $this->get('FilterFormURL');
-		$tpl = $j3 ? 'bootstrap' : 'default';
+		$tpl = 'bootstrap';
 		$tpl = $input->get('layout', $params->get('fusionchart_layout', $tpl));
 		$this->_setPath('template', JPATH_ROOT . '/plugins/fabrik_visualization/fusionchart/views/fusionchart/tmpl/' . $tpl);
 
