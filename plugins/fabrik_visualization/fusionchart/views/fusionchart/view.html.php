@@ -41,7 +41,7 @@ class FabrikViewFusionchart extends HtmlView
 	{
 		$app = Factory::getApplication();
 		$input = $app->input;
-		$j3 = FabrikWorker::j3();
+		$j3 = true;
 		$model = $this->getModel();
 		$usersConfig = ComponentHelper::getParams('com_fabrik');
 		$model->setId($input->getInt('id', $usersConfig->get('visualizationid', $input->getInt('visualizationid', 0))));
@@ -76,7 +76,7 @@ class FabrikViewFusionchart extends HtmlView
 		$this->filters = $this->get('Filters');
 		$this->showFilters = $model->showFilters();
 		$this->filterFormURL = $this->get('FilterFormURL');
-		$tpl = $j3 ? 'bootstrap' : 'default';
+		$tpl = 'bootstrap';
 		$tpl = $input->get('layout', $params->get('fusionchart_layout', $tpl));
 		$this->_setPath('template', JPATH_ROOT . '/plugins/fabrik_visualization/fusionchart/views/fusionchart/tmpl/' . $tpl);
 

@@ -46,7 +46,6 @@ class PlgFabrik_ElementNotes extends PlgFabrik_ElementDatabasejoin
 		$opts->joinPkVal = (int) $this->getJoinedGroupPkVal($repeatCounter);
 		$opts->primaryKey = $this->getGroupModel()->isJoin() ? (int) $this->getJoinedGroupPkVal($repeatCounter) : $opts->rowid;
 		$opts->id = $this->id;
-		$opts->j3 = FabrikWorker::j3();
 
 		return array('FbNotes', $id, $opts);
 	}

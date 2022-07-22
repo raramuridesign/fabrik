@@ -78,7 +78,7 @@ class FabrikViewFusion_Gantt_Chart extends HtmlView
 		$this->filters = $this->get('Filters');
 		$this->showFilters = $model->showFilters();
 		$this->filterFormURL = $this->get('FilterFormURL');
-		$tpl = FabrikWorker::j3() ? 'bootstrap' : 'default';
+		$tpl = 'bootstrap';
 		$tpl = $params->get('fusion_gantt_chart_layout', $tpl);
 		$tmplpath = JPATH_ROOT . '/plugins/fabrik_visualization/fusion_gantt_chart/views/fusion_gantt_chart/tmpl/' . $tpl;
 		$this->_setPath('template', $tmplpath);
