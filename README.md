@@ -36,10 +36,12 @@ More plugins will be added as they are updated for J!4 and working.
 Progress:
 ================
 
-2022-07-12: 
-Install is working. 
+2022-07-25: 
+Upgrade, Install, Update and Uninstall is working. 
 
 A new list can be created and a new (field)element can be added. A list can be copied, can be trashed and trash can be emptied.
 A new list menu item can be created and the frontend is also working. It only needs some styling.
 
 All menu items (lists, forms, groups, elements,...) are updated to the Atum template.
+
+See the WIKI for more info.
