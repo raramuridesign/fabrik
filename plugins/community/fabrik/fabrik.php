@@ -49,7 +49,7 @@ class plgCommunityFabrik extends CApplications
 			$className = 'plgCommunityFabrik';
 			$callback = array($className, '_getFabrikHTML');
 
-			$content = $cache->call($callback, $view, $id, $rowid, $usekey, $layout, $element, $additional, $this->userparams, $user->id);
+			$content = $cache->get($callback, $view, $id, $rowid, $usekey, $layout, $element, $additional, $this->userparams, $user->id);
 		}else{
 			$content = "<div class=\"icon-nopost\"><img src='".JURI::base()."components/com_community/assets/error.gif' alt=\"\" /></div>";
 			$content .= "<div class=\"content-nopost\">".Text::_('Fabrik view details not set.')."</div>";
