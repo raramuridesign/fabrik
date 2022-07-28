@@ -57,7 +57,7 @@ foreach ($this->rows as $row)
 					</a></td>
 					<td>
 						<div class="btn-group">
-							<a class="dropdown-toggle btn btn-mini" data-toggle="dropdown" href="#">
+							<a class="dropdown-toggle btn btn-mini" data-bs-toggle="dropdown" href="#">
 								<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu">
