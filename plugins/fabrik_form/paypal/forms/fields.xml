@@ -37,6 +37,8 @@
 			<field name="paypal_conditon"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				description="PLG_FORM_PAYPAL_CONDITION_DESC"
 				label="PLG_FORM_PAYPAL_CONDITION_LABEL"
 				repeat="true"/>
@@ -48,6 +50,8 @@
 			<field name="paypal_cost"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				default=""
 				description="PLG_FORM_PAYPAL_COST_DESC"
 				label="PLG_FORM_PAYPAL_COST_LABEL"
@@ -68,6 +72,8 @@
 			<field name="paypal_item"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				description="PLG_FORM_PAYPAL_PURCHASE_ITEM_DESC"
 				label="PLG_FORM_PAYPAL_PURCHASE_ITEM_LABEL"
 				repeat="true" />
@@ -89,6 +95,8 @@
 			<field name="paypal_shipping_cost"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				default=""
 				description="PLG_FORM_PAYPAL_SHIPPING_COST_DESC"
 				label="PLG_FORM_PAYPAL_SHIPPING_COST_LABEL"
@@ -156,6 +164,8 @@
 			<field name="paypal_subscription_switch"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				repeat="true"
 				description="PLG_FORM_PAYPAL_GATEWAY_SWITCH_DESC"
 				label="PLG_FORM_PAYPAL_GATEWAY_SWITCH_LABEL" />
@@ -173,6 +183,8 @@
 			<field name="paypal_return_msg"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				description="PLG_FORM_PAYPAL_RETURN_MSG_DESC"
 				label="PLG_FORM_PAYPAL_RETURN_MSG_LABEL"
 				repeat="true"/>

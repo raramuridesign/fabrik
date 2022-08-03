@@ -17,6 +17,8 @@
 			<field name="jsperiod_code"
 				type="fabrikeditor"
 				mode="javascript"
+				cols="60"
+				rows="6"
 				description="PLG_ELEMENT_JSPERIODICAL_OBSERVER_CODE_DESC"
 				label="PLG_ELEMENT_JSPERIODICAL_OBSERVER_CODE_LABEL" />
 

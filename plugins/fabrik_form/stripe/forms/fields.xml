@@ -80,6 +80,8 @@
 			<field name="stripe_condition"
 			       type="fabrikeditor"
 			       mode="php"
+				cols="60"
+				rows="6"
 			       description="PLG_FORM_STRIPE_CONDITION_DESC"
 			       label="PLG_FORM_STRIPE_CONDITION_LABEL"
 			       repeat="true"/>
@@ -87,6 +89,8 @@
 			<field name="stripe_after_process"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_STRIPE_AFTER_PROCESS_DESC"
 				   label="PLG_FORM_STRIPE_AFTER_PROCESS_LABEL"
 				   repeat="true"/>
@@ -105,6 +109,8 @@
 			<field name="stripe_cost"
 			       type="fabrikeditor"
 			       mode="php"
+				cols="60"
+				rows="6"
 			       default=""
 			       description="PLG_FORM_STRIPE_COST_DESC"
 			       label="PLG_FORM_STRIPE_COST_LABEL"
@@ -154,6 +160,8 @@
 			<field name="stripe_item"
 			       type="fabrikeditor"
 			       mode="php"
+				cols="60"
+				rows="6"
 			       description="PLG_FORM_STRIPE_PURCHASE_ITEM_DESC"
 			       label="PLG_FORM_STRIPE_PURCHASE_ITEM_LABEL"
 			       repeat="true"/>
@@ -305,6 +313,8 @@
 			<field name="stripe_charge_bottom_text_new"
 			       type="fabrikeditor"
 			       mode="php"
+				cols="60"
+				rows="6"
 			       description="PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_NEW_DESC"
 			       label="PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_NEW_LABEL"
 			       repeat="true"/>
@@ -312,6 +322,8 @@
 			<field name="stripe_charge_bottom_text_existing"
 			       type="fabrikeditor"
 			       mode="php"
+				cols="60"
+				rows="6"
 			       description="PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_EXISTING_DESC"
 			       label="PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_EXISTING_LABEL"
 			       repeat="true"/>
@@ -319,6 +331,8 @@
 			<field name="stripe_charge_failed_validation_text"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_STRIPE_CHARGE_FAILED_VALIDATION_TEXT_DESC"
 				   label="PLG_FORM_STRIPE_CHARGE_FAILED_VALIDATION_TEXT_LABEL"
 				   repeat="true"/>

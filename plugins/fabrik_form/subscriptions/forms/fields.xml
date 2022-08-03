@@ -14,6 +14,8 @@
 			<field name="subscriptions_return_msg" 
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				description="PLG_FORM_SUBSCRIPTIONS_RETURN_MSG_DESC"
 				label="PLG_FORM_SUBSCRIPTIONS_RETURN_MSG_LABEL"
 				repeat="true"/>
@@ -21,6 +23,8 @@
 			<field name="subscriptions_conditon"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				description="PLG_FORM_SUBSCRIPTIONS_CONDITION_DESC"
 				label="PLG_FORM_SUBSCRIPTIONS_CONDITION_LABEL"
 				repeat="true" />

@@ -139,12 +139,16 @@
 			<field name="fusionchart_query"
 				   type="fabrikeditor"
 				   mode="mysql"
+				cols="60"
+				rows="6"
 				   description="PLG_VISUALIZATION_FUSIONCHART_QUERY_DESC"
 				   label="PLG_VISUALIZATION_FUSIONCHART_QUERY_LABEL"/>
 
 			<field name="fusionchart_php"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_VISUALIZATION_FUSIONCHART_PHP_DESC"
 				   label="PLG_VISUALIZATION_FUSIONCHART_PHP_LABEL"/>
 
