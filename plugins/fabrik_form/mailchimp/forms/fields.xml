@@ -10,7 +10,8 @@
 
             <field default="1"
                    class="btn-group"
-                   description="PLG_FORM_MAILCHIMP_USER_CONFIRM_DESC" label="PLG_FORM_MAILCHIMP_USER_CONFIRM_LABEL"
+ 				layout="joomla.form.field.radio.switcher"
+                  description="PLG_FORM_MAILCHIMP_USER_CONFIRM_DESC" label="PLG_FORM_MAILCHIMP_USER_CONFIRM_LABEL"
                    name="mailchimp_userconfirm" repeat="true" type="radio">
                 <option value="0">JNO</option>
                 <option value="1">JYES</option>
@@ -34,7 +35,8 @@
 
             <field default="1"
                    class="btn-group"
-                   description="PLG_FORM_MAILCHIMP_UPDATE_EXISTING_DESC"
+ 				layout="joomla.form.field.radio.switcher"
+                  description="PLG_FORM_MAILCHIMP_UPDATE_EXISTING_DESC"
                    label="PLG_FORM_MAILCHIMP_UPDATE_EXISTING_LABEL" name="mailchimp_update_existing" repeat="true"
                    type="radio">
                 <option value="0">JNO</option>
@@ -52,7 +54,8 @@
 
             <field default="1"
                    class="btn-group"
-                   description="PLG_FORM_MAILCHIMP_DOUBLE_OPTIN_DESC" label="PLG_FORM_MAILCHIMP_DOUBLE_OPTIN_LABEL"
+ 				layout="joomla.form.field.radio.switcher"
+                  description="PLG_FORM_MAILCHIMP_DOUBLE_OPTIN_DESC" label="PLG_FORM_MAILCHIMP_DOUBLE_OPTIN_LABEL"
                    name="mailchimp_double_optin" repeat="true" type="radio">
                 <option value="0">JNO</option>
                 <option value="1">JYES</option>
@@ -61,7 +64,8 @@
 
             <field default="0"
                    class="btn-group"
-                   description="PLG_FORM_MAILCHIMP_SUCCESS_DESC" label="PLG_FORM_MAILCHIMP_SUCCESS_LABEL"
+ 				layout="joomla.form.field.radio.switcher"
+                  description="PLG_FORM_MAILCHIMP_SUCCESS_DESC" label="PLG_FORM_MAILCHIMP_SUCCESS_LABEL"
                    name="mailchimp_success" repeat="true" type="radio">
                 <option value="0">JNO</option>
                 <option value="1">JYES</option>
@@ -81,6 +85,7 @@
 
             <field default="1"
                    class="btn-group"
+				layout="joomla.form.field.radio.switcher"
                    description="PLG_FORM_MAILCHIMP_FAIL_ON_ERROR_DESC" label="PLG_FORM_MAILCHIMP_FAIL_ON_ERROR_LABEL"
                    name="mailchimp_fail_on_error" repeat="true" type="radio">
                 <option value="0">JNO</option>

@@ -19,14 +19,20 @@
 
 			<field default="0"
 				class="btn-group"
-				label="PLG_ELEMENT_FBLIKE_SHOW_FACES_LABEL" name="fblike_showfaces" type="radio">
+				layout="joomla.form.field.radio.switcher"
+				label="PLG_ELEMENT_FBLIKE_SHOW_FACES_LABEL" 
+				name="fblike_showfaces" 
+				type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 			</field>
 
 			<field default="0"
 				   class="btn-group"
-				   label="PLG_ELEMENT_FBLIKE_INCLUDE_SHARE_LABEL" name="fblike_include_share" type="radio">
+				layout="joomla.form.field.radio.switcher"
+				   label="PLG_ELEMENT_FBLIKE_INCLUDE_SHARE_LABEL" 
+				   name="fblike_include_share" 
+				   type="radio">
 				<option value="0">JNO</option>
 				<option value="1">JYES</option>
 			</field>

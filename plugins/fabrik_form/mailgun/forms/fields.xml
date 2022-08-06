@@ -117,6 +117,7 @@
 				class="btn-group"
 				default="0"
 				repeat="true"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FABRIK_FORM_MAILGUN_RUN_CONTENT_PLUGINS_DESC"
 				label="PLG_FABRIK_FORM_MAILGUN_RUN_CONTENT_PLUGINS_LABEL">
 					<option value="0">JNO</option>
@@ -182,6 +183,7 @@
 				class="btn-group"
 				default="0"
 				repeat="true"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FABRIK_FORM_MAILGUN_ATTACH_PDF_DESC"
 				label="PLG_FABRIK_FORM_MAILGUN_ATTACH_PDF_LABEL">
 					<option value="0">JNO</option>

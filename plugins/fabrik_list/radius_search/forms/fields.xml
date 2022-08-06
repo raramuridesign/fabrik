@@ -76,6 +76,7 @@
 				class="btn-group"
 				default="0"
 				repeat="true"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_LIST_RADIUS_SEARCH_START_ACTIVE_DESC"
 				label="PLG_LIST_RADIUS_SEARCH_START_ACTIVE_LABEL">
 					<option value="0">JNO</option>
@@ -111,6 +112,7 @@
 				class="btn-group"
 				default="1"
 				repeat="true"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_LIST_RADIUS_SEARCH_MYLOC_DESC"
 				label="PLG_LIST_RADIUS_SEARCH_MYLOC_LABEL" >
 					<option value="0">JNO</option>
@@ -122,6 +124,7 @@
 				class="btn-group"
 				default="0"
 				repeat="true"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_LIST_RADIUS_SEARCH_PLACE_DESC"
 				label="PLG_LIST_RADIUS_SEARCH_PLACE_LABEL" >
 					<option value="0">JNO</option>
@@ -133,6 +136,7 @@
 				class="btn-group"
 				default="1"
 				repeat="true"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_LIST_RADIUS_SEARCH_COORDS_DESC"
 				label="PLG_LIST_RADIUS_SEARCH_COORDS_LABEL" >
 					<option value="0">JNO</option>
@@ -144,6 +148,7 @@
 				class="btn-group"
 				default="1"
 				repeat="true"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_LIST_RADIUS_SEARCH_GEOCODE_DESC"
 				label="PLG_LIST_RADIUS_SEARCH_GEOCODE_LABEL" >
 					<option value="0">JNO</option>
@@ -155,6 +160,7 @@
 				class="btn-group"
 				default="0"
 				repeat="true"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_LIST_RADIUS_SEARCH_GEOCODE_AS_TYPE_DESC"
 				label="PLG_LIST_RADIUS_SEARCH_GEOCODE_AS_TYPE_LABEL">
 					<option value="0">JNO</option>

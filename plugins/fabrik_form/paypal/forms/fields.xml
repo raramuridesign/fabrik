@@ -59,6 +59,7 @@
 
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_EVAL_COST_DESC" label="PLG_FORM_PAYPAL_EVAL_COST_LABEL" name="paypal_cost_eval" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -80,6 +81,7 @@
 
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_EVAL_ITEM_DESC"
 				label="PLG_FORM_PAYPAL_EVAL_ITEM_LABEL" name="paypal_item_eval" repeat="true" type="radio">
 					<option value="0">JNO</option>
@@ -104,6 +106,7 @@
 
  			<field default="0"
  				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
  				description="PLG_FORM_PAYPAL_EVAL_SHIPPING_COST_DESC" label="PLG_FORM_PAYPAL_EVAL_COST_LABEL" name="paypal_shipping_cost_eval" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -135,6 +138,7 @@
 
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_SHIPPING_OVERRIDE_DESC" label="PLG_FORM_PAYPAL_SHIPPING_OVERRIDE_LABEL" name="paypal_shipping_address_override" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -217,6 +221,7 @@
 				type="radio"
 				default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_TEST_MODE_DESC"
 				label="PLG_FORM_PAYPAL_TEST_MODE_LABEL"
 				repeat="true">
@@ -234,6 +239,7 @@
 				type="radio"
 				default="1"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_DEBUG_EMAIL_DESC" label="PLG_FORM_PAYPAL_DEBUG_EMAIL_LABEL"
 				repeat="true">
 					<option value="0">JNO</option>
@@ -244,6 +250,7 @@
 				type="radio"
 				default="1"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_DEFAULT_EMAIL_DESC"
 				label="PLG_FORM_PAYPAL_DEFAULT_EMAIL_LABEL"
 				repeat="true">

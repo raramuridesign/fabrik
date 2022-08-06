@@ -311,6 +311,7 @@
 			<field default="1"
 			       class="btn-group"
 			       description="PLG_VISUALIZATION_FUSIONCHART_TREND_SHOWONTOP_DESC"
+				layout="joomla.form.field.radio.switcher"
 			       label="PLG_VISUALIZATION_FUSIONCHART_TREND_SHOWONTOP_LABEL"
 			       name="fusionchart_trendshowontop"
 			       type="radio">
@@ -320,6 +321,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_TREND_ISZONE_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_TREND_ISZONE_LABEL"
 			       name="fusionchart_trendiszone"
@@ -330,6 +332,7 @@
 
 			<field default="0"
 				   class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				   description="PLG_VISUALIZATION_FUSIONCHART_TREND_MERGE_DESC"
 				   label="PLG_VISUALIZATION_FUSIONCHART_TREND_MERGE_LABEL"
 				   name="fusionchart_trendmerge"
@@ -439,6 +442,7 @@
 		          name="gal">
 			<field default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_SHOWNAMES_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_SHOWNAMES_LABEL"
 			       name="fusionchart_shownames"
@@ -449,6 +453,7 @@
 
 			<field default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_SHOWVALUES_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_SHOWVALUES_LABEL"
 			       name="fusionchart_showvalues"
@@ -459,6 +464,7 @@
 
 			<field default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_SHOWLIMITS_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_SHOWLIMITS_LABEL"
 			       name="fusionchart_showlimits"
@@ -469,6 +475,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_ROTATENAMES_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_ROTATENAMES_LABEL"
 			       name="fusionchart_rotatenames"
@@ -479,6 +486,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_SLANTLABELS_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_SLANTLABELS_LABEL"
 			       name="fusionchart_slantlabels"
@@ -489,6 +497,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_ROTATEVALUES_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_ROTATEVALUES_LABEL"
 			       name="fusionchart_rotatevalues"
@@ -499,6 +508,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_VALUES_INSIDE_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_VALUES_INSIDE_LABEL"
 			       name="fusionchart_values_inside"
@@ -509,6 +519,7 @@
 
 			<field default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_ANIMATION_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_ANIMATION_LABEL"
 			       name="fusionchart_animation"
@@ -519,6 +530,7 @@
 
 			<field default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_COL_SHADOW_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_COL_SHADOW_LABEL"
 			       name="fusionchart_colshadow"
@@ -609,6 +621,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_FORMAT_NUM_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_FORMAT_NUM_LABEL"
 			       name="fusionchart_formatnumber"
@@ -619,6 +632,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_FORMAT_NUM_SCALE_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_FORMAT_NUM_SCALE_LABEL"
 			       name="fusionchart_formatnumberscale"
@@ -719,6 +733,7 @@
 
 			<field default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_DIVLINE_SHOWVALUE_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_DIVLINE_SHOWVALUE_LABEL"
 			       name="fusionchart_divline_showvalue"
@@ -789,6 +804,7 @@
 		<fieldset label="PLG_VISUALIZATION_FUSIONCHART_SPACER_HOVER_CAPT_PROPERTIES"
 		          name="hover_caption">
 			<field default="0"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_FUSIONCHART_SHOW_HOVERCAP_DESC"
 			       label="PLG_VISUALIZATION_FUSIONCHART_SHOW_HOVERCAP_LABEL"
 			       name="fusionchart_show_hovercap"
@@ -856,6 +872,7 @@
 
 			<field default="0"
 				   class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				   description="PLG_VISUALIZATION_FUSIONCHART_EXPORT_DESC"
 				   label="PLG_VISUALIZATION_FUSIONCHART_EXPORT_LABEL"
 				   name="fusionchart_export"

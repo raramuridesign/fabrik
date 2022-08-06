@@ -20,6 +20,7 @@
 				type="radio"
 				class="btn-group"
 				default="0"
+				layout="joomla.form.field.radio.switcher"
 				label="PLG_ELEMENT_NOTES_EVAL_LABEL">
 				<option value="0">JNO</option>
 				<option value="1">JYES</option>

@@ -4,6 +4,7 @@
 		<fieldset name="plg-form-logs">
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_LOG_RECORDINDB_DESC" label="PLG_FORM_LOG_RECORDINDB_LABEL" name="logs_record_in_db" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -15,6 +16,7 @@
 				
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				label="PLG_FORM_LOG_RECORDIP_LABEL" name="logs_record_ip" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -22,6 +24,7 @@
 			
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				label="PLG_FORM_LOG_RECORDREFERER_LABEL" name="logs_record_referer" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -29,6 +32,7 @@
 			
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				label="PLG_FORM_LOG_RECORDUSERAGENT_LABEL" name="logs_record_useragent" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -38,6 +42,7 @@
 				
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_LOG_COMPAREDATA_DESC" label="PLG_FORM_LOG_COMPAREDATA_LABEL" name="compare_data" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -45,6 +50,7 @@
 			
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_LOG_MAKEFILE_DESC" label="PLG_FORM_LOG_MAKEFILE_LABEL" name="make_file" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -56,6 +62,7 @@
 				
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_LOG_RANDOMFILENAME_DESC" label="PLG_FORM_LOG_RANDOMFILENAME_LABEL" name="logs_random_filename" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -91,6 +98,7 @@
 
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_LOG_FORM_LOAD_DESC" label="PLG_FORM_LOG_FORM_LOAD_LABEL" name="log_form_load" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="id">JYES</option>
@@ -98,6 +106,7 @@
 			
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_LOG_SEND_EMAIL_DESC" label="PLG_FORM_LOG_SEND_EMAIL_LABEL" name="log_send_email" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>

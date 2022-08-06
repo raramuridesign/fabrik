@@ -20,6 +20,7 @@
 				default="0"
 				repeat="true"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_LIST_PIVOT_COUNT_FIELDS_DESC"
 				label="PLG_LIST_PIVOT_COUNT_FIELDS_LABEL">
 				<option value="0">JNO</option>
@@ -67,6 +68,7 @@
 				default="0" 
 				repeat="true" 
 				class="btn-group" 
+				layout="joomla.form.field.radio.switcher"
 				label="PLG_LIST_PIVOT_FORMAT_NUMBERS_LABEL" 
 				description="PLG_LIST_PIVOT_FORMAT_NUMBERS_DESC"> 
 					<option value="0">JNO</option> 
@@ -107,6 +109,7 @@
 				default="1"
 				repeat="true"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				label="PLG_LIST_PIVOT_CACHE_LABEL"
 				description="PLG_LIST_PIVOT_CACHE_DESC">
 					<option value="0">JNO</option>

@@ -41,6 +41,7 @@
 				type="radio"
 				default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_TWITTERSHOWSUCCESSMSG_DESC"
 				label="PLG_FORM_TWITTERSHOWSUCCESSMSG_LABEL"
 				repeat="true">

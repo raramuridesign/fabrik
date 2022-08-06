@@ -67,6 +67,7 @@
 
 			<field default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_VISUALIZATION_CHART_SHOW_FILTERS_DESC"
 			       label="PLG_VISUALIZATION_CHART_SHOW_FILTERS_LABEL"
 			       name="chart_show_filters"
@@ -102,6 +103,7 @@
 
 			<field default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       label="PLG_VISUALIZATION_CHART_FILL_LINE_GRAPH_LABEL"
 			       name="fill_line_graph"
 			       type="radio">
@@ -111,6 +113,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       label="PLG_VISUALIZATION_CHART_SHOW_LEGEND_LABEL"
 			       name="graph_show_legend"
 			       type="radio">

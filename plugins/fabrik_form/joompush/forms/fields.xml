@@ -8,6 +8,7 @@
 				   default="0"
 				   repeat="true"
 				   class="btn-group btn-group-yesno"
+				layout="joomla.form.field.radio.switcher"
 				   label="PLG_FABRIK_FORM_JOOMPUSH_USE_JP_TEMPLATE_LABEL"
 				   description="PLG_FABRIK_FORM_JOOMPUSH_USE_JP_TEMPLATE_DESC">
 				<option value="0">JNO</option>
