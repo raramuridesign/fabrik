@@ -48,6 +48,7 @@
 			       type="radio"
 			       default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_ZIPCODE_CHECK_DESC"
 			       label="PLG_FORM_STRIPE_ZIPCODE_CHECK_LABEL"
 			       repeat="true">
@@ -59,6 +60,7 @@
 			       type="radio"
 			       default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_COLLECT_BILLING_ADDRESS_DESC"
 			       label="PLG_FORM_STRIPE_COLLECT_BILLING_ADDRESS_LABEL"
 			       repeat="true">
@@ -70,6 +72,7 @@
 			       type="radio"
 			       default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_COLLECT_SHIPPING_ADDRESS_DESC"
 			       label="PLG_FORM_STRIPE_COLLECT_SHIPPING_ADDRESS_LABEL"
 			       repeat="true">
@@ -80,6 +83,8 @@
 			<field name="stripe_condition"
 			       type="fabrikeditor"
 			       mode="php"
+				cols="60"
+				rows="6"
 			       description="PLG_FORM_STRIPE_CONDITION_DESC"
 			       label="PLG_FORM_STRIPE_CONDITION_LABEL"
 			       repeat="true"/>
@@ -87,6 +92,8 @@
 			<field name="stripe_after_process"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_STRIPE_AFTER_PROCESS_DESC"
 				   label="PLG_FORM_STRIPE_AFTER_PROCESS_LABEL"
 				   repeat="true"/>
@@ -105,6 +112,8 @@
 			<field name="stripe_cost"
 			       type="fabrikeditor"
 			       mode="php"
+				cols="60"
+				rows="6"
 			       default=""
 			       description="PLG_FORM_STRIPE_COST_DESC"
 			       label="PLG_FORM_STRIPE_COST_LABEL"
@@ -112,6 +121,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_COST_EVAL_DESC"
 			       label="PLG_FORM_STRIPE_COST_EVAL_LABEL"
 			       name="stripe_cost_eval"
@@ -123,6 +133,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_COST_EVAL_TO_ELEMENT_DESC"
 			       label="PLG_FORM_STRIPE_COST_EVAL_TO_ELEMENT_LABEL"
 			       name="stripe_cost_eval_to_element"
@@ -154,12 +165,15 @@
 			<field name="stripe_item"
 			       type="fabrikeditor"
 			       mode="php"
+				cols="60"
+				rows="6"
 			       description="PLG_FORM_STRIPE_PURCHASE_ITEM_DESC"
 			       label="PLG_FORM_STRIPE_PURCHASE_ITEM_LABEL"
 			       repeat="true"/>
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_PURCHASE_ITEM_EVAL_DESC"
 			       label="PLG_FORM_STRIPE_PURCHASE_ITEM_EVAL_LABEL"
 			       name="stripe_item_eval"
@@ -171,6 +185,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_PURCHASE_ITEM_EVAL_TO_ELEMENT_DESC"
 			       label="PLG_FORM_STRIPE_PURCHASE_ITEM_EVAL_TO_ELEMENT_LABEL"
 			       name="stripe_item_eval_to_element"
@@ -305,6 +320,8 @@
 			<field name="stripe_charge_bottom_text_new"
 			       type="fabrikeditor"
 			       mode="php"
+				cols="60"
+				rows="6"
 			       description="PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_NEW_DESC"
 			       label="PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_NEW_LABEL"
 			       repeat="true"/>
@@ -312,6 +329,8 @@
 			<field name="stripe_charge_bottom_text_existing"
 			       type="fabrikeditor"
 			       mode="php"
+				cols="60"
+				rows="6"
 			       description="PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_EXISTING_DESC"
 			       label="PLG_FORM_STRIPE_CHARGE_BOTTOM_TEXT_EXISTING_LABEL"
 			       repeat="true"/>
@@ -319,6 +338,8 @@
 			<field name="stripe_charge_failed_validation_text"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_STRIPE_CHARGE_FAILED_VALIDATION_TEXT_DESC"
 				   label="PLG_FORM_STRIPE_CHARGE_FAILED_VALIDATION_TEXT_LABEL"
 				   repeat="true"/>
@@ -361,6 +382,7 @@
 
 			<field default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_CUSTOMERS_INSERT_DESC"
 			       label="PLG_FORM_STRIPE_CUSTOMERS_INSERT_LABEL"
 			       name="stripe_customers_insert"
@@ -372,6 +394,7 @@
 
 			<field default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_CUSTOMERS_ALLOW_UPDATE_CC_DESC"
 			       label="PLG_FORM_STRIPE_CUSTOMERS_ALLOW_UPDATE_CC_LABEL"
 			       name="stripe_customers_allow_update_cc"
@@ -638,6 +661,7 @@
 
 			<field default="0"
 				   class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				   description="PLG_FORM_STRIPE_COUPONS_CC_ON_FREE_DESC"
 				   label="PLG_FORM_STRIPE_COUPONS_CC_ON_FREE_LABEL"
 				   name="stripe_coupons_cc_on_free"
@@ -662,6 +686,7 @@
 			       type="radio"
 			       default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_TEST_MODE_DESC"
 			       label="PLG_FORM_STRIPE_TEST_MODE_LABEL"
 			       repeat="true">
@@ -685,6 +710,7 @@
 			       type="radio"
 			       default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_DEBUG_EMAIL_DESC"
 			       label="PLG_FORM_STRIPE_DEBUG_EMAIL_LABEL"
 			       repeat="true">
@@ -696,6 +722,7 @@
 			       type="radio"
 			       default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_FORM_STRIPE_DEFAULT_EMAIL_DESC"
 			       label="PLG_FORM_STRIPE_DEFAULT_EMAIL_LABEL"
 			       repeat="true">

@@ -31,6 +31,8 @@
 			<field name="zoom_condition"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_ZOOM_CONDITION_DESC"
 				   label="PLG_FORM_ZOOM_CONDITION_LABEL"
 				   repeat="true" />
@@ -42,6 +44,7 @@
 
 			<field description="PLG_FORM_ZOOM_USERS_CHECK_EXISTING_DESC"
 				   label="PLG_FORM_ZOOM_USERS_CHECK_EXISTING_LABEL"
+				layout="joomla.form.field.radio.switcher"
 				   name="zoom_users_check_existing"
 				   repeat="true"
 				   type="radio"
@@ -264,6 +267,7 @@
 			</field>
 
 			<field name="zoom_webinars_attending_confirmation_email"
+				layout="joomla.form.field.radio.switcher"
 				   label="PLG_FORM_ZOOM_WEBINARS_ATTENDING_CONFIRMATION_EMAIL_LABEL"
 				   description="PLG_FORM_ZOOM_WEBINARS_ATTENDING_CONFIRMATION_EMAIL_DESC"
 				   repeat="true"
@@ -329,6 +333,8 @@
 			<field name="zoom_webinars_attending_join_condition"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_ZOOM_WEBINARS_ATTENDING_JOIN_CONDITION_DESC"
 				   label="PLG_FORM_ZOOM_WEBINARS_ATTENDING_JOIN_CONDITION_LABEL"
 				   repeat="true" />
@@ -350,6 +356,8 @@
 			<field name="zoom_webinars_attending_leave_condition"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_ZOOM_WEBINARS_ATTENDING_LEAVE_CONDITION_DESC"
 				   label="PLG_FORM_ZOOM_WEBINARS_ATTENDING_LEAVE_CONDITION_LABEL"
 				   repeat="true" />
@@ -539,6 +547,8 @@
 			<field name="zoom_php_users_post"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_ZOOM_PHP_USERS_POST_DESC"
 				   label="PLG_FORM_ZOOM_PHP_USERS_POST_LABEL"
 				   repeat="true" />
@@ -546,6 +556,8 @@
 			<field name="zoom_php_webinars_post"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_ZOOM_PHP_WEBINARS_POST_DESC"
 				   label="PLG_FORM_ZOOM_PHP_WEBINARS_POST_LABEL"
 				   repeat="true" />
@@ -553,6 +565,8 @@
 			<field name="zoom_php_meetings_post"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_ZOOM_PHP_MEETINGS_POST_DESC"
 				   label="PLG_FORM_ZOOM_PHP_MEETINGS_POST_LABEL"
 				   repeat="true" />
@@ -560,6 +574,8 @@
 			<field name="zoom_php_attending_add"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_ZOOM_PHP_ATTENDING_ADD_DESC"
 				   label="PLG_FORM_ZOOM_PHP_ATTENDING_ADD_LABEL"
 				   repeat="true" />
@@ -567,6 +583,8 @@
 			<field name="zoom_php_attending_remove"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FORM_ZOOM_PHP_ATTENDING_REMOVE_DESC"
 				   label="PLG_FORM_ZOOM_PHP_ATTENDING_REMOVE_LABEL"
 				   repeat="true" />

@@ -172,6 +172,7 @@
 
 			<field default="0"
 				   class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				   description="PLG_FABRIK_LIST_WEBSERVICE_UPDATE_EXISTING_DESC"
 				   label="PLG_FABRIK_LIST_WEBSERVICE_UPDATE_EXISTING_LABEL"
 				   name="webservice_update_existing"

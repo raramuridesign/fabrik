@@ -8,6 +8,7 @@
 				   default="0"
 				   repeat="true"
 				   class="btn-group btn-group-yesno"
+				layout="joomla.form.field.radio.switcher"
 				   label="PLG_FABRIK_FORM_JOOMPUSH_USE_JP_TEMPLATE_LABEL"
 				   description="PLG_FABRIK_FORM_JOOMPUSH_USE_JP_TEMPLATE_DESC">
 				<option value="0">JNO</option>
@@ -82,6 +83,8 @@
 			<field name="joompush_conditon"
 				   type="fabrikeditor"
 				   mode="php"
+				cols="60"
+				rows="6"
 				   description="PLG_FABRIK_FORM_JOOMPUSH_CONDITION_DESC"
 				   label="PLG_FABRIK_FORM_JOOMPUSH_CONDITION_LABEL"
 				   repeat="true" />

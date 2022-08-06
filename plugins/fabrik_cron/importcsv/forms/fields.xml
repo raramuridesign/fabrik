@@ -15,6 +15,7 @@
 				type="radio"
 				default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_CRON_IMPORTCSV_USETABLENAME_DESC"
 				label="PLG_CRON_IMPORTCSV_USETABLENAME_LABEL">
 					<option value="0">JNO</option>
@@ -49,6 +50,7 @@
 				type="radio"
 				default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_CRON_IMPORTCSV_DROPDATA_DESC"
 				label="PLG_CRON_IMPORTCSV_DROPDATA_LABEL">
 					<option value="0">JNO</option>
@@ -59,6 +61,7 @@
 				type="radio"
 				default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_CRON_IMPORTCSV_OVERWRITE_DESC"
 				label="PLG_CRON_IMPORTCSV_OVERWRITE_LABEL">
 					<option value="0">JNO</option>

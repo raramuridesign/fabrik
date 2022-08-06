@@ -14,6 +14,8 @@
 			<field name="subscriptions_return_msg" 
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				description="PLG_FORM_SUBSCRIPTIONS_RETURN_MSG_DESC"
 				label="PLG_FORM_SUBSCRIPTIONS_RETURN_MSG_LABEL"
 				repeat="true"/>
@@ -21,12 +23,15 @@
 			<field name="subscriptions_conditon"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				description="PLG_FORM_SUBSCRIPTIONS_CONDITION_DESC"
 				label="PLG_FORM_SUBSCRIPTIONS_CONDITION_LABEL"
 				repeat="true" />
 				
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_SUBSCRIPTIONS_TEST_MODE_DESC"
 				label="PLG_FORM_SUBSCRIPTIONS_TEST_MODE_LABEL"
 				name="subscriptions_testmode" repeat="true" type="radio">
@@ -36,6 +41,7 @@
 
 			<field default="1"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_SUBSCRIPTIONS_DEBUG_EMAIL_DESC"
 				label="PLG_FORM_SUBSCRIPTIONS_DEBUG_EMAIL_LABEL"
 				name="subscriptions_receive_debug_emails" repeat="true" type="radio">
@@ -47,6 +53,7 @@
 				name="subscriptions_send_default_email"
 				default="1"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_SUBSCRIPTIONS_DEFAULT_EMAIL_DESC"
 				label="PLG_FORM_SUBSCRIPTIONS_DEFAULT_EMAIL_LABEL"
 				repeat="true">

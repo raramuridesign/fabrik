@@ -23,6 +23,7 @@
 			<field default="1"
 			       class="btn-group"
 			       description=""
+				layout="joomla.form.field.radio.switcher"
 			       label="INCLUDERELATEDVIDEOS"
 			       name="include_related"
 			       type="radio">
@@ -32,6 +33,7 @@
 
 			<field default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_ELEMENT_YOUTUBE_AUTOPLAY_DESC"
 			       label="PLG_ELEMENT_YOUTUBE_AUTOPLAY_LABEL"
 			       name="youtube_autoplay"
@@ -42,6 +44,7 @@
 
 			<field default="1"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="PLG_ELEMENT_YOUTUBE_FULLSCREEN_DESC"
 			       label="PLG_ELEMENT_YOUTUBE_FULLSCREEN_DESC"
 			       name="youtube_fullscreen"
@@ -54,6 +57,7 @@
 			       type="radio"
 			       default="0"
 			       class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 			       description="ENABLEDELAYEDCOOKIESDESC"
 			       label="ENABLEDELAYEDCOOKIES">
 				<option value="0">JNO</option>
@@ -126,6 +130,7 @@
 				   type="radio"
 				   default="0"
 				   class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				   description="PLG_ELEMENT_YOUTUBE_EMBED_READ_ONLY_DESC"
 				   label="PLG_ELEMENT_YOUTUBE_EMBED_READ_ONLY_LABEL">
 				<option value="0">JNO</option>

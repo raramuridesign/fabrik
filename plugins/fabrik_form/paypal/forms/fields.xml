@@ -37,6 +37,8 @@
 			<field name="paypal_conditon"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				description="PLG_FORM_PAYPAL_CONDITION_DESC"
 				label="PLG_FORM_PAYPAL_CONDITION_LABEL"
 				repeat="true"/>
@@ -48,6 +50,8 @@
 			<field name="paypal_cost"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				default=""
 				description="PLG_FORM_PAYPAL_COST_DESC"
 				label="PLG_FORM_PAYPAL_COST_LABEL"
@@ -55,6 +59,7 @@
 
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_EVAL_COST_DESC" label="PLG_FORM_PAYPAL_EVAL_COST_LABEL" name="paypal_cost_eval" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -68,12 +73,15 @@
 			<field name="paypal_item"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				description="PLG_FORM_PAYPAL_PURCHASE_ITEM_DESC"
 				label="PLG_FORM_PAYPAL_PURCHASE_ITEM_LABEL"
 				repeat="true" />
 
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_EVAL_ITEM_DESC"
 				label="PLG_FORM_PAYPAL_EVAL_ITEM_LABEL" name="paypal_item_eval" repeat="true" type="radio">
 					<option value="0">JNO</option>
@@ -89,6 +97,8 @@
 			<field name="paypal_shipping_cost"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				default=""
 				description="PLG_FORM_PAYPAL_SHIPPING_COST_DESC"
 				label="PLG_FORM_PAYPAL_SHIPPING_COST_LABEL"
@@ -96,6 +106,7 @@
 
  			<field default="0"
  				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
  				description="PLG_FORM_PAYPAL_EVAL_SHIPPING_COST_DESC" label="PLG_FORM_PAYPAL_EVAL_COST_LABEL" name="paypal_shipping_cost_eval" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -127,6 +138,7 @@
 
 			<field default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_SHIPPING_OVERRIDE_DESC" label="PLG_FORM_PAYPAL_SHIPPING_OVERRIDE_LABEL" name="paypal_shipping_address_override" repeat="true" type="radio">
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
@@ -156,6 +168,8 @@
 			<field name="paypal_subscription_switch"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				repeat="true"
 				description="PLG_FORM_PAYPAL_GATEWAY_SWITCH_DESC"
 				label="PLG_FORM_PAYPAL_GATEWAY_SWITCH_LABEL" />
@@ -173,6 +187,8 @@
 			<field name="paypal_return_msg"
 				type="fabrikeditor"
 				mode="php"
+				cols="60"
+				rows="6"
 				description="PLG_FORM_PAYPAL_RETURN_MSG_DESC"
 				label="PLG_FORM_PAYPAL_RETURN_MSG_LABEL"
 				repeat="true"/>
@@ -205,6 +221,7 @@
 				type="radio"
 				default="0"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_TEST_MODE_DESC"
 				label="PLG_FORM_PAYPAL_TEST_MODE_LABEL"
 				repeat="true">
@@ -222,6 +239,7 @@
 				type="radio"
 				default="1"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_DEBUG_EMAIL_DESC" label="PLG_FORM_PAYPAL_DEBUG_EMAIL_LABEL"
 				repeat="true">
 					<option value="0">JNO</option>
@@ -232,6 +250,7 @@
 				type="radio"
 				default="1"
 				class="btn-group"
+				layout="joomla.form.field.radio.switcher"
 				description="PLG_FORM_PAYPAL_DEFAULT_EMAIL_DESC"
 				label="PLG_FORM_PAYPAL_DEFAULT_EMAIL_LABEL"
 				repeat="true">
