@@ -16,6 +16,8 @@ No sample application and several links removed from home dashboard.
 
 Backend adapted for Atum template, frontend adapted for Cassiopeia template.
 
+Updated for bootstrap 5.
+
 Only real working plugins included.
 
 
