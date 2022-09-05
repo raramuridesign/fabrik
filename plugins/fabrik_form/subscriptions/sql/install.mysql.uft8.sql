@@ -29,9 +29,9 @@ CREATE TABLE IF NOT EXISTS `#__fabrik_subs_plans` (
   `visible` tinyint(1) DEFAULT 0,
   `ordering` int(11) NOT NULL default '999999',
   `plan_name` varchar(255) DEFAULT '',
-  `desc` text DEFAULT '',
+  `desc` text,
   `usergroup` int(3) DEFAULT 0,
-  `free` text DEFAULT '',
+  `free` text,
   `strapline` varchar(255) DEFAULT '',
   PRIMARY KEY  (`id`),
   KEY `fb_prefilter_active_INDEX` (`active`),
@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `#__fabrik_subs_plans` (
 CREATE TABLE IF NOT EXISTS `#__fabrik_subs_cron_emails` (
   `id` int(6) NOT NULL auto_increment,
   `subject` varchar(255) NOT NULL DEFAULT '',
-  `body` text NOT NULL DEFAULT '',
+  `body` text,
   `event_type` varchar(20) NOT NULL DEFAULT '',
   `timeunit` varchar(2) NOT NULL DEFAULT '',
   `time_value` int(3) NOT NULL DEFAULT 0,
@@ -52,9 +52,9 @@ CREATE TABLE IF NOT EXISTS `#__fabrik_subs_cron_emails` (
 CREATE TABLE IF NOT EXISTS `#__fabrik_subs_payment_gateways` (
   `id` int(6) NOT NULL auto_increment,
   `name` varchar(255) DEFAULT '',
-  `active` text DEFAULT '',
-  `description` text DEFAULT '',
-  `subscription` text DEFAULT '',
+  `active` text,
+  `description` text,
+  `subscription` text,
   PRIMARY KEY  (`id`)
 );
 
@@ -106,8 +106,8 @@ CREATE TABLE IF NOT EXISTS `#__fabrik_subs_users` (
   `email` varchar(255) DEFAULT '',
   `password` varchar(255) DEFAULT '',
   `plan_id` int(11) DEFAULT 0,
-  `terms` text DEFAULT '',
-  `termstext` text DEFAULT '',
+  `terms` text,
+  `termstext` text,
   `gateway` int(6) DEFAULT 0,
   `pp_txn_id` varchar(255) DEFAULT '',
   `pp_payment_amount` varchar(255) DEFAULT '',

@@ -16,21 +16,15 @@ ALTER TABLE `#__fabrik_subs_plans` ALTER `active` SET DEFAULT 0;
 ALTER TABLE `#__fabrik_subs_plans` ALTER `visible` SET DEFAULT 0;
 ALTER TABLE `#__fabrik_subs_plans` ALTER `ordering` SET DEFAULT '999999';
 ALTER TABLE `#__fabrik_subs_plans` ALTER `plan_name` SET DEFAULT '';
-ALTER TABLE `#__fabrik_subs_plans` ALTER `desc` SET DEFAULT '';
 ALTER TABLE `#__fabrik_subs_plans` ALTER `usergroup` SET DEFAULT 0;
-ALTER TABLE `#__fabrik_subs_plans` ALTER `free` SET DEFAULT '';
 ALTER TABLE `#__fabrik_subs_plans` ALTER `strapline` SET DEFAULT '';
 
 ALTER TABLE `#__fabrik_subs_cron_emails` ALTER `subject` SET DEFAULT '';
-ALTER TABLE `#__fabrik_subs_cron_emails` ALTER `body` SET DEFAULT '';
 ALTER TABLE `#__fabrik_subs_cron_emails` ALTER `event_type` SET DEFAULT '';
 ALTER TABLE `#__fabrik_subs_cron_emails` ALTER `timeunit` SET DEFAULT '';
 ALTER TABLE `#__fabrik_subs_cron_emails` ALTER `time_value` SET DEFAULT 0;
 
 ALTER TABLE `#__fabrik_subs_payment_gateways` ALTER `name` SET DEFAULT '';
-ALTER TABLE `#__fabrik_subs_payment_gateways` ALTER `active` SET DEFAULT '';
-ALTER TABLE `#__fabrik_subs_payment_gateways` ALTER `description` SET DEFAULT '';
-ALTER TABLE `#__fabrik_subs_payment_gateways` ALTER `subscription` SET DEFAULT '';
 
 ALTER TABLE `#__fabrik_subs_plan_billing_cycle` ALTER `plan_id` SET DEFAULT 0;
 ALTER TABLE `#__fabrik_subs_plan_billing_cycle` ALTER `duration` SET DEFAULT 0;
@@ -62,8 +56,6 @@ ALTER TABLE `#__fabrik_subs_users` ALTER `username` SET DEFAULT '';
 ALTER TABLE `#__fabrik_subs_users` ALTER `email` SET DEFAULT '';
 ALTER TABLE `#__fabrik_subs_users` ALTER `password` SET DEFAULT '';
 ALTER TABLE `#__fabrik_subs_users` ALTER `plan_id` SET DEFAULT 0;
-ALTER TABLE `#__fabrik_subs_users` ALTER `terms` SET DEFAULT '';
-ALTER TABLE `#__fabrik_subs_users` ALTER `termstext` SET DEFAULT '';
 ALTER TABLE `#__fabrik_subs_users` ALTER `gateway` SET DEFAULT 0;
 ALTER TABLE `#__fabrik_subs_users` ALTER `pp_txn_id` SET DEFAULT '';
 ALTER TABLE `#__fabrik_subs_users` ALTER `pp_payment_amount` SET DEFAULT '';
