@@ -114,7 +114,7 @@ class fabrikPayPalIPN
 	 */
 	function payment_status_Pending($listModel, $request, &$set_list, &$err_msg)
 	{
-		$config = Factory::getConfig();
+		$config = Factory::getApplication()->getConfig();
 		$MailFrom = $config->get('mailfrom');
 		$FromName = $config->get('fromname');
 		$SiteName = $config->get('sitename');

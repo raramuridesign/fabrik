@@ -363,7 +363,7 @@ class FabrikModelTimeline extends FabrikFEModelVisualization
 		$textColours = (array) $params->get('timeline_text_color', array());
 		$classNames = (array) $params->get('timeline_class', array());
 
-		$timeZone = new \DateTimeZone(Factory::getConfig()->get('offset'));
+		$timeZone = new \DateTimeZone(Factory::getApplication()->getConfig()->get('offset'));
 
 		$lists = $params->get('timeline_table', array());
 		$eventdata = array();

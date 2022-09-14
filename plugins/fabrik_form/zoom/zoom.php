@@ -562,7 +562,7 @@ class PlgFabrik_FormZoom extends PlgFabrik_Form
             $payload[$zoomKey] = self::formatZoomPayload($value, $map['format']);
         }
 
-        $payload['timezone'] = Factory::getConfig()->get('offset');
+        $payload['timezone'] = Factory::getApplication()->getConfig()->get('offset');
 
         if ($params->get('zoom_webinars_create_as', 'per') === 'per')
         {

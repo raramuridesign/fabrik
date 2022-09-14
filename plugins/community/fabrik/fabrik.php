@@ -25,7 +25,7 @@ class plgCommunityFabrik extends CApplications
 
 	function onProfileDisplay()
 	{
-		$config	= CFactory::getConfig();
+		$config	= CFactory::getApplication()->getConfig();
 		$this->loadUserParams();
 
 		$uri		= JURI::base();
