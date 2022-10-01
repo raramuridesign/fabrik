@@ -11,7 +11,7 @@ var libxmljs = require('libxmljs'),
 
 module.exports = function (grunt) {
     mkdirp.sync(updateDir);
-    fs.copySync('administrator/components/com_fabrik/update/fabrik31', updateDir);
+    fs.copySync('administrator/components/com_fabrik/update/fabrik4', updateDir);
     jPlugins(grunt);
     console.log('-- Update Server: J Plugins created');
     fabrikPlugins(grunt);
@@ -20,12 +20,14 @@ module.exports = function (grunt) {
     console.log('-- Update Server: Fabrik Modules created');
     component(grunt);
     console.log('-- Update Server: Component created');
-	library(grunt);
-	console.log('-- Update Server: Library created');
+    library(grunt);
+    console.log('-- Update Server: Library created');
+    package(grunt);
+    console.log('-- Update Server: Package created');
     makePackageList(extensions);
     console.log('-- Update Server: Package list created');
     // Copy back
-    fs.copySync(updateDir, 'administrator/components/com_fabrik/update/fabrik31');
+    fs.copySync(updateDir, 'administrator/components/com_fabrik/update/fabrik4');
 };
 
 /**
@@ -117,6 +119,48 @@ var map = function (xmlDoc, props, update) {
     return update;
 };
 
+var package = function (grunt) {
+    var version = grunt.config.get('pkg.version'),
+        jversion = grunt.config.get('jversion'),
+        xmlFile,
+        props = {
+            'name'          : 'Fabrik',
+            'description': 'Fabrik Package',
+            'element'    : 'pkg_fabrik',
+            'type'       : 'package',
+            'version'    : version,
+            'downloads'  : {
+                'downloadurl': {
+                    '$': {'type': 'full', 'format': 'zip'},
+                    '_': grunt.config.get('updateserver') + 'fabrik/media/downloads/pkg_fabrik_' + version + '.zip'
+                }
+            },
+            'maintainer' : 'Fabrikar.com',
+            'maintainerurl': 'http://fabrikar.com',
+            'targetplatform': {
+                '$': {
+                    'name'   : 'joomla',
+                    'version': jversion
+                }
+            }
+        };
+    extensions.push({
+        '$': {
+            'client'  : 'administrator',
+            'name'    : 'fabrik',
+            'element' : 'pkg_fabrik',
+            'type'    : 'package',
+            'folder'  : '',
+            'version' : version,
+            'targetplatformversion' : jversion,
+            detailsurl: grunt.config.get('updateserver') + 'fabrik/update/fabrik4/pkg_fabrik.xml'
+        }
+    });
+
+    xmlFile = updateDir + 'pkg_fabrik.xml';
+    writeXml(xmlFile, props, version);
+};
+
 var component = function (grunt) {
     var version = grunt.config.get('pkg.version'),
         jversion = grunt.config.get('jversion'),
@@ -130,7 +174,7 @@ var component = function (grunt) {
             'downloads'  : {
                 'downloadurl': {
                     '$': {'type': 'full', 'format': 'zip'},
-                    '_': 'http://fabrikar.com/media/downloads/com_fabrik_' + version + '.zip'
+                    '_': grunt.config.get('updateserver') + 'fabrik/media/downloads/com_fabrik_' + version + '.zip'
                 }
             },
             'maintainer' : 'Fabrikar.com',
@@ -150,7 +194,8 @@ var component = function (grunt) {
             'type'    : 'component',
             'folder'  : '',
             'version' : version,
-            detailsurl: 'http://fabrikar.com/update/fabrik31/com_fabrik.xml'
+            'targetplatformversion' : jversion,
+            detailsurl: grunt.config.get('updateserver') + 'fabrik/update/fabrik4/com_fabrik.xml'
         }
     });
 
@@ -159,44 +204,45 @@ var component = function (grunt) {
 };
 
 var library = function (grunt) {
-	var version = grunt.config.get('pkg.version'),
-		jversion = grunt.config.get('jversion'),
-		xmlFile,
-		props = {
-			'name'          : 'Fabrik',
-			'description': 'Fabrik Library',
-			'element'    : 'lib_fabrik',
-			'type'       : 'library',
-			'version'    : version,
-			'downloads'  : {
-				'downloadurl': {
-					'$': {'type': 'full', 'format': 'zip'},
-					'_': 'http://fabrikar.com/media/downloads/lib_fabrik_' + version + '.zip'
-				}
-			},
-			'maintainer' : 'Fabrikar.com',
-			'maintainerurl': 'http://fabrikar.com',
-			'targetplatform': {
-				'$': {
-					'name'   : 'joomla',
-					'version': jversion
-				}
-			}
-		};
-	extensions.push({
-		'$': {
-			'client'  : 'site',
-			'name'    : 'fabrik',
-			'element' : 'lib_fabrik',
-			'type'    : 'library',
-			'folder'  : '',
-			'version' : version,
-			detailsurl: 'http://fabrikar.com/update/fabrik31/lib_fabrik.xml'
-		}
-	});
+    var version = grunt.config.get('pkg.version'),
+        jversion = grunt.config.get('jversion'),
+        xmlFile,
+        props = {
+            'name'          : 'Fabrik',
+            'description': 'Fabrik Library',
+            'element'    : 'lib_fabrik',
+            'type'       : 'library',
+            'version'    : version,
+            'downloads'  : {
+                'downloadurl': {
+                    '$': {'type': 'full', 'format': 'zip'},
+                    '_': grunt.config.get('updateserver') + '/fabrik/media/downloads/lib_fabrik_' + version + '.zip'
+                }
+            },
+            'maintainer' : 'Fabrikar.com',
+            'maintainerurl': 'http://fabrikar.com',
+            'targetplatform': {
+                '$': {
+                    'name'   : 'joomla',
+                    'version': jversion
+                }
+            }
+        };
+    extensions.push({
+        '$': {
+            'client'  : 'site',
+            'name'    : 'fabrik',
+            'element' : 'lib_fabrik',
+            'type'    : 'library',
+            'folder'  : '',
+            'version' : version,
+            'targetplatformversion' : jversion,
+            detailsurl: grunt.config.get('updateserver') + 'fabrik/update/fabrik4/lib_fabrik.xml'
+        }
+    });
 
-	xmlFile = updateDir + 'lib_fabrik.xml';
-	writeXml(xmlFile, props, version);
+    xmlFile = updateDir + 'lib_fabrik.xml';
+    writeXml(xmlFile, props, version);
 };
 
 
@@ -205,7 +251,7 @@ var fabrikModules = function (grunt) {
     var version = grunt.config.get('pkg.version'),
         jversion = grunt.config.get('jversion'),
         i, mod, props, xmlFile, client,
-        updateFolder = grunt.config.get('pkg.config.live.downloadFolder');
+        updateFolder = grunt.config.get('updateserver') + 'media/downloads/';
 
     for (i = 0; i < buildConfig.modules.length; i++) {
         mod = buildConfig.modules[i];
@@ -220,7 +266,7 @@ var fabrikModules = function (grunt) {
             'downloads'     : {
                 'downloadurl': {
                     '$': {'type': 'full', 'format': 'zip'},
-                    '_': updateFolder + mod.fileName.replace('{version}', version)
+                    '_': grunt.config.get('updateserver') + 'fabrik/media/downloads/' + mod.fileName.replace('{version}', version)
                 }
             },
             'maintainer'    : 'Fabrikar.com',
@@ -236,7 +282,8 @@ var fabrikModules = function (grunt) {
             '$': {
                 'name'    : mod.name, 'element': mod.element, 'type': 'module', 'folder': '', 'version': version,
                 'client': client,
-                detailsurl: 'http://fabrikar.com/update/fabrik31/' + mod.xmlFile
+                'targetplatformversion' : jversion,
+                detailsurl: grunt.config.get('updateserver') + 'fabrik/update/fabrik4/' + mod.xmlFile
             }
         });
 
@@ -267,7 +314,7 @@ var jPlugins = function (grunt) {
                 'downloads'     : {
                     'downloadurl': {
                         '$': {'type': 'full', 'format': 'zip'},
-                        '_': grunt.config.get('pkg.config.live.downloadFolder') + plg.fileName.replace('{version}', version)
+                        '_': grunt.config.get('updateserver') + 'fabrik/media/downloads/' + plg.fileName.replace('{version}', version)
                     }
                 },
                 'maintainer'    : 'Fabrikar.com',
@@ -287,7 +334,8 @@ var jPlugins = function (grunt) {
                     'type'    : 'plugin',
                     'folder'  : p.toLowerCase(),
                     'version' : version,
-                    detailsurl: 'http://fabrikar.com/update/fabrik31/' + plg.xmlFile
+                    'targetplatformversion' : jversion,
+                    detailsurl: grunt.config.get('updateserver') + 'update/fabrik4/' + plg.xmlFile
                 }
             });
 
@@ -341,7 +389,7 @@ var fabrikPlugins = function (grunt) {
                         'downloads'     : {
                             'downloadurl': {
                                 '$': {'type': 'full', 'format': 'zip'},
-                                '_': grunt.config.get('pkg.config.live.downloadFolder') + 'plg_' + productName.toLowerCase() + '_' + folders[i] + '_' + plugins[j] + '_' + version + '.zip'
+                                '_': grunt.config.get('updateserver') + 'fabrik/media/downloads/' + 'plg_' + productName.toLowerCase() + '_' + folders[i] + '_' + plugins[j] + '_' + version + '.zip'
                             }
                         },
                         'maintainer'    : 'Fabrikar.com',
@@ -361,7 +409,8 @@ var fabrikPlugins = function (grunt) {
                             'type'    : 'plugin',
                             'folder'  : folder.toLowerCase(),
                             'version' : version,
-                            detailsurl: 'http://fabrikar.com/update/fabrik31/plg_' + folders[i] + '_' + plugins[j] + '.xml'
+                            'targetplatformversion' : jversion,
+                            detailsurl: grunt.config.get('updateserver') + 'update/fabrik4/plg_' + folders[i] + '_' + plugins[j] + '.xml'
                         }
                     });
 
