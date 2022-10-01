@@ -45,7 +45,7 @@ var updateAFile = function (path, grunt) {
             var v = attrs[i].value();
             newAttrs[k] = v;
         }
-        newAttrs.version = grunt.config.get('jversion')
+        newAttrs.version = grunt.config.get('jversion')[0];
         xmlDoc.get('//extension').attr(newAttrs);
         try {
             fs.writeFileSync(path, xmlDoc.toString());
